@@ -1,0 +1,474 @@
+.benefits {
+  @include blockWrapper;
+  margin-bottom: 14rem;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 8rem;
+  }
+}
+
+.benefits__content {
+  @include blockContent;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 2rem;
+
+  @include breakpoint(mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.benefits__slider {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "stack";
+  position: relative;
+
+  @include breakpoint(mobile) {
+    display: flex;
+    flex-direction: column;
+    display: contents;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    grid-area: stack;
+
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+}
+
+.benefits__slider-images {
+  grid-area: stack;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(mobile) {
+    border-radius: 1.2rem;
+    order: 10;
+    margin-top: 2rem;
+    background-color: #fff;
+  }
+  .swiper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    margin: 0;
+  }
+
+  .swiper-wrapper {
+    flex-grow: 1;
+  }
+
+  .swiper-slide {
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.benefits__slider-arrows {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 4rem;
+  top: 4rem;
+  gap: 1.2rem;
+  z-index: 10;
+
+  @include breakpoint(mobile) {
+    left: 2.4rem;
+    bottom: 2.4rem;
+    gap: 1rem;
+    top: auto;
+  }
+}
+
+.benefits__slider-arrow {
+  flex-shrink: 0;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+  transition: border-color 0.2s;
+
+  &.swiper-button-disabled {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  @media (hover: hover) {
+    &:not(.swiper-button-disabled):hover {
+      border-color: rgba(255, 255, 255, 0.6);
+
+      svg {
+        fill: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+
+  @include breakpoint(mobile) {
+    width: 5rem;
+    height: 5rem;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: white;
+    transition: fill 0.2s;
+  }
+}
+
+.benefits__slider-images-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+
+  @include breakpoint(mobile) {
+    &::before {
+      content: "";
+      padding-bottom: 135%;
+      display: block;
+    }
+  }
+}
+
+.benefits__slider-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include breakpoint(mobile) {
+    .swiper-slide:first-child & {
+      border-top-left-radius: 1.2rem;
+      border-bottom-left-radius: 1.2rem;
+    }
+    .swiper-slide:last-child & {
+      border-top-right-radius: 1.2rem;
+      border-bottom-right-radius: 1.2rem;
+    }
+  }
+}
+
+.benefits__slider-cards {
+  align-self: flex-end;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  @include breakpoint(mobile) {
+    position: static;
+  }
+
+  .swiper {
+    width: 100%;
+    margin: 0;
+    flex-grow: 1;
+  }
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    box-sizing: border-box;
+    flex-shrink: 0;
+
+    @include breakpoint(mobile) {
+      margin-right: 1.6rem;
+      width: 100%;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.benefits__slider-cards-group {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 2rem;
+  padding: 4rem;
+  flex-grow: 1;
+
+  @include breakpoint(mobile) {
+    padding: 0;
+    grid-gap: 1.6rem;
+  }
+}
+
+.benefits__slider-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  gap: 0.3rem;
+  color: white;
+  flex-grow: 1;
+
+  @include breakpointMF(small-tablet) {
+    backdrop-filter: blur(10px);
+  }
+
+  @include breakpoint(mobile) {
+    padding: 1rem;
+    border-radius: 1.2rem;
+    background: #f2f2f2;
+    color: black;
+    gap: 2rem;
+  }
+}
+
+.benefits__slider-card-top-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.benefits__slider-card-amount {
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+
+  @include breakpoint(mobile) {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
+
+.benefits__slider-card-icon {
+  flex-shrink: 0;
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+
+  @include breakpoint(mobile) {
+    width: 2.2rem;
+    height: 2.2rem;
+    filter: invert(100%);
+  }
+}
+
+.benefits__slider-card-text {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+
+  @include breakpoint(mobile) {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+  }
+}
+
+.benefits__text-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "stack";
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  @include breakpoint(mobile) {
+    order: -1;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.4rem;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    grid-area: stack;
+
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+}
+
+.benefits__text-content-inner {
+  grid-area: stack;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  @include breakpoint(mobile) {
+    padding: 2.4rem;
+    gap: 6rem;
+  }
+}
+
+.benefits__text {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+
+  @include breakpoint(mobile) {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 4rem;
+
+    @include breakpoint(mobile) {
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: -0.064rem;
+      margin-bottom: 1.6rem;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    margin-bottom: 2.8rem;
+
+    @include breakpoint(mobile) {
+      margin-bottom: 2rem;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.8rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    & > li {
+      padding-left: 3.5rem;
+      position: relative;
+
+      @include breakpoint(mobile) {
+        padding-left: 1.5rem;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0.65em;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        left: 1rem;
+        background-color: currentColor;
+
+        @include breakpoint(mobile) {
+          left: 0.4rem;
+          width: 4px;
+          height: 4px;
+        }
+      }
+    }
+  }
+}
+
+.benefits__write-us {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  padding: 2rem 6rem;
+  border-radius: 1rem;
+  background: black;
+  color: white;
+  align-self: flex-start;
+  margin-top: auto;
+  transition: color 0.2s;
+  text-align: center;
+  &:link,
+  &:visited {
+    color: white;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  @include breakpoint(mobile) {
+    margin: 0;
+    align-self: stretch;
+    padding: 1.6rem 3.2rem;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+}
+
+.benefits__slider-cards-pagination {
+  display: none;
+
+  @include breakpoint(mobile) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+    gap: 1.2rem;
+
+    .swiper-pagination-bullet.swiper-pagination-bullet.swiper-pagination-bullet {
+      margin: 0;
+      opacity: 1;
+      height: 0.8rem;
+      width: 0.8rem;
+      flex-shrink: 0;
+      transition: width 0.2s;
+      background-color: #f2f2f2;
+      border-radius: 10rem;
+      &.swiper-pagination-bullet-active {
+        width: 8rem;
+      }
+    }
+  }
+}
