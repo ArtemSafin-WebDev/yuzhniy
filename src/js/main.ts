@@ -5,6 +5,12 @@ import intro from "./intro";
 import header from "./header";
 import loader from "./loader";
 import catalog from "./catalog";
+import modals from "./modals";
+import fileUpload from "./fileUpload";
+import selects from "./selects";
+import forms from "./forms";
+import catalogDetail from "./catalogDetail";
+import tabs from "./tabs";
 
 document.addEventListener("DOMContentLoaded", () => {
   benefitsSlider();
@@ -12,6 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
   header();
   loader();
   catalog();
+  selects();
+  fileUpload();
+  modals();
+  tabs();
+  forms();
+  catalogDetail();
 });
 
 window.addEventListener("load", () => {

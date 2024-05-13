@@ -1,0 +1,420 @@
+<div class="modal js-modal" id="callback-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-modal-close" type="button">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#modal-close"></use>
+            </svg>
+        </button>
+        <div class="modal__callback">
+            <div class="modal__callback-left-col">
+                <h3 class="modal__callback-heading">
+                    Есть вопросы<br>
+                    или пожелания?
+                </h3>
+                <div class="modal__callback-text">
+                    <p>
+                        Поделитесь с нами своими идеями и предложениями. Помогите нам стать лучше для вас. Заполните
+                        форму обратной связи. Мы рассмотрим каждую заявку.
+                    </p>
+                </div>
+            </div>
+            <div class="modal__callback-right-col">
+                <form action="/" method="POST" class="modal__callback-form js-form">
+                    <div class="modal__callback-fields">
+                        <div class="modal__callback-field">
+                            <label class="modal__callback-field-label">
+                                <input type="text" class="modal__callback-input" placeholder="Имя" required="">
+                                <span class="modal__callback-field-label-text">
+                                    Имя
+                                </span>
+                            </label>
+                        </div>
+                        <div class="modal__callback-field">
+                            <div class="modal__callback-select js-select" data-placeholder="Тема обращения"
+                                data-required-select="">
+                                <button class="modal__callback-select-btn" type="button">
+                                    <span class="modal__callback-select-btn-text">
+                                        <span class="modal__callback-select-btn-text-inner js-btn-text">
+                                            Тема обращения
+                                        </span>
+                                    </span>
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#accordion-arrow"></use>
+                                    </svg>
+                                </button>
+                                <div class="modal__callback-select-dropdown">
+                                    <div class="modal__callback-select-dropdown-inner">
+                                        <ul class="modal__callback-select-dropdown-list">
+                                            <li class="modal__callback-select-dropdown-list-item">
+                                                <label class="modal__callback-select-dropdown-choice">
+                                                    <input type="radio" name="subject"
+                                                        class="modal__callback-select-dropdown-choice-input"
+                                                        value="Оставить отзыв о ТРЦ">
+                                                    <span class="modal__callback-select-dropdown-choice-text">
+                                                        Оставить отзыв о ТРЦ
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__callback-select-dropdown-list-item">
+                                                <label class="modal__callback-select-dropdown-choice">
+                                                    <input type="radio" name="subject"
+                                                        class="modal__callback-select-dropdown-choice-input"
+                                                        value="Оставить отзыв о магазине">
+                                                    <span class="modal__callback-select-dropdown-choice-text">
+                                                        Оставить отзыв о магазине
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__callback-select-dropdown-list-item">
+                                                <label class="modal__callback-select-dropdown-choice">
+                                                    <input type="radio" name="subject"
+                                                        class="modal__callback-select-dropdown-choice-input"
+                                                        value="По вопросам аренды помещений">
+                                                    <span class="modal__callback-select-dropdown-choice-text">
+                                                        По вопросам аренды помещений
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__callback-select-dropdown-list-item">
+                                                <label class="modal__callback-select-dropdown-choice">
+                                                    <input type="radio" name="subject"
+                                                        class="modal__callback-select-dropdown-choice-input"
+                                                        value="По вопросам рекламы">
+                                                    <span class="modal__callback-select-dropdown-choice-text">
+                                                        По вопросам рекламы
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__callback-select-dropdown-list-item">
+                                                <label class="modal__callback-select-dropdown-choice">
+                                                    <input type="radio" name="subject"
+                                                        class="modal__callback-select-dropdown-choice-input"
+                                                        value="Записать ребёнка на развлекательную программу">
+                                                    <span class="modal__callback-select-dropdown-choice-text">
+                                                        Записать ребёнка на развлекательную программу
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__callback-select-dropdown-list-item">
+                                                <label class="modal__callback-select-dropdown-choice">
+                                                    <input type="radio" name="subject"
+                                                        class="modal__callback-select-dropdown-choice-input"
+                                                        value="Подписаться на новостной дайджест">
+                                                    <span class="modal__callback-select-dropdown-choice-text">
+                                                        Подписаться на новостной дайджест
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__callback-field">
+                            <label class="modal__callback-field-label">
+                                <input type="tel" class="modal__callback-input" placeholder="Телефон" required="">
+                                <span class="modal__callback-field-label-text">
+                                    Телефон
+                                </span>
+                            </label>
+                        </div>
+                        <div class="modal__callback-field">
+                            <label class="modal__callback-field-label">
+                                <input type="email" class="modal__callback-input" placeholder="E-mail">
+                                <span class="modal__callback-field-label-text">
+                                    E-mail
+                                </span>
+                            </label>
+                        </div>
+                        <div class="modal__callback-field modal__callback-field--fullwidth">
+                            <label class="modal__callback-field-label">
+                                <input type="comment" class="modal__callback-input" placeholder="Текст" required="">
+                                <span class="modal__callback-field-label-text">
+                                    Текст
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal__callback-bottom-row">
+                        <label class="modal__callback-file-upload js-file-upload">
+                            <input type="file" name="file" class="modal__callback-file-upload-input">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#file"></use>
+                            </svg>
+                            <span class="modal__callback-file-text">
+                                <span class="modal__callback-file-text-inner js-file-upload-text">
+                                    Прикрепить файл
+                                </span>
+
+                            </span>
+                        </label>
+                        <div class="modal__callback-policy">
+
+
+                            <label class="modal__callback-policy-checkbox">
+                                <input type="checkbox" name="policy" value="Y"
+                                    class="modal__callback-policy-checkbox-input" required="" checked="">
+                                <span class="modal__callback-policy-checkbox-mark">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                                <span class="modal__callback-policy-checkbox-text">
+                                    Я принимаю <a href="#">
+                                        Политику обработки персональных данных
+                                    </a>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="modal__callback-submit" type="submit">
+                        Написать нам
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="callback-modal-success">
+    <div class="modal__inner modal__inner--success">
+        <button class="modal__close js-modal-close" type="button">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#modal-close"></use>
+            </svg>
+        </button>
+        <div class="modal__success">
+            <h3 class="modal__success-heading">
+                Спасибо!
+            </h3>
+            <div class="modal__success-text">
+                Заявка была отправлена. Менеджер свяжется с вами в ближайшее время.
+            </div>
+            <button class="modal__success-link js-modal-close" type="button">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="callback-modal-error">
+    <div class="modal__inner modal__inner--success">
+        <button class="modal__close js-modal-close" type="button">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#modal-close"></use>
+            </svg>
+        </button>
+        <div class="modal__success">
+            <h3 class="modal__success-heading">
+                Ошибка
+            </h3>
+            <div class="modal__success-text">
+                Во время отправки произошла ошибка
+            </div>
+            <button class="modal__success-link js-modal-close" type="button">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal--catalog js-modal" id="catalog-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-modal-close" type="button">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#modal-close"></use>
+            </svg>
+        </button>
+        <div class="modal__catalog">
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal modal--rules js-modal" id="rules-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-modal-close" type="button">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#modal-close"></use>
+            </svg>
+        </button>
+        <div class="modal__rules js-tabs">
+            <div class="modal__rules-top">
+                <h3 class="modal__rules-title">
+                    Правила посещения ТРЦ
+                </h3>
+                <div class="modal__rules-languages">
+                    <button class="modal__rules-languages-btn js-tabs-btn active">
+                        <img src="/images/rus.svg" alt="" class="modal__rules-languages-btn-icon">
+                        Рус
+                    </button>
+                    <button class="modal__rules-languages-btn js-tabs-btn">
+                        <img src="/images/tat.svg" alt="" class="modal__rules-languages-btn-icon">
+                        Тат
+                    </button>
+                </div>
+            </div>
+            <div class="modal__rules-tabs">
+                <div class="modal__rules-tabs-item js-tabs-item">
+                    <div class="modal__rules-text-content">
+                        <p>
+                            Убедительно просим вас изучить настоящую памятку и позаботиться о том, чтобы её знали
+                            все члены вашей семьи. Из неё вы узнаете, как защитить себя, спасти своё здоровье и жизнь,
+                            спасти своих родных, близких и друзей в случае угрозы или осуществления террористического
+                            акта.
+                        </p>
+                        <p>
+                            Во имя здоровья и жизни своей, родных и близких вам людей, изучите эту памятку
+                            и неукоснительно следуйте её рекомендациям.
+                        </p>
+                        <h3>
+                            1. Общие рекомендации гражданам по действиям в экстремальных ситуациях.
+                        </h3>
+                        <p>
+                            Для предотвращения возможного террористического акта или уменьшения его последствий
+                            необходимо соблюдать следующие меры предосторожности:
+                        </p>
+                        <ul>
+                            <li>
+                                в случае ранения двигайтесь как можно меньше — это уменьшит кровопотерю;
+                            </li>
+                            <li>
+                                будьте внимательны, используйте любую возможность для спасения;
+                            </li>
+                            <li>
+                                если произошёл взрыв — примите меры к недопущению пожара и паники, окажите первую
+                                медицинскую помощь пострадавшим;
+                            </li>
+                            <li>
+                                постарайтесь запомнить приметы подозрительных людей и сообщите их прибывшим сотрудникам
+                                спецслужб.
+                            </li>
+                        </ul>
+                        <h3>
+                            2. Рекомендации по действиям населения в различных конкретных ситуациях.
+                        </h3>
+                        <ol>
+                            <li>
+                                <p>
+                                    Обнаружение подозрительного предмета, который может оказаться самодельным взрывным
+                                    устройством.
+                                </p>
+                                <p>
+                                    Если вы обнаружили подозрительный предмет — не оставляйте этот факт без внимания!
+                                </p>
+                            </li>
+                            <li>
+                                На территории ТРЦ запрещено:
+                                <ol>
+                                    <li>
+                                        Курить сигареты, электронные сигареты, вейпы.
+                                    </li>
+                                    <li>
+                                        Проходить на территорию ТРЦ с велосипедами, самокатами, электросамокатами,
+                                        скейтбордами, гироскутерами (кроме случаев передачи транспорта в ремонт и
+                                        возврата/обмена покупки в магазин).
+                                    </li>
+                                    <li>
+                                        Передвигаться в галереях ТРЦ на гироскутере, сегвее, моноколесе,
+                                        электросамокате, велосипеде, самокате, роликовых коньках, скейтборде, тележке
+                                        для покупок и т. д.
+                                    </li>
+                                    <li>
+                                        Кататься по территории парковки на скейтборде, тележках для покупок, гироскутере
+                                        (во избежание травм и нарушений ПДД).
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <a href="#">
+                            Правила использования услуг.
+                        </a>
+                        <a href="#">
+                            Условия оказания услуги по предоставлению доступа в сеть «Интернет» по технологии Wi-Fi
+                            на территории ТРЦ.
+                        </a>
+
+                    </div>
+                </div>
+                <div class="modal__rules-tabs-item js-tabs-item">
+                    <div class="modal__rules-text-content">
+
+                        <p>
+                            Во имя здоровья и жизни своей, родных и близких вам людей, изучите эту памятку
+                            и неукоснительно следуйте её рекомендациям.
+                        </p>
+                        <h3>
+                            1. Общие рекомендации гражданам по действиям в экстремальных ситуациях.
+                        </h3>
+                        <p>
+                            Для предотвращения возможного террористического акта или уменьшения его последствий
+                            необходимо соблюдать следующие меры предосторожности:
+                        </p>
+                        <ul>
+                            <li>
+                                в случае ранения двигайтесь как можно меньше — это уменьшит кровопотерю;
+                            </li>
+                            <li>
+                                будьте внимательны, используйте любую возможность для спасения;
+                            </li>
+                            <li>
+                                если произошёл взрыв — примите меры к недопущению пожара и паники, окажите первую
+                                медицинскую помощь пострадавшим;
+                            </li>
+                            <li>
+                                постарайтесь запомнить приметы подозрительных людей и сообщите их прибывшим сотрудникам
+                                спецслужб.
+                            </li>
+                        </ul>
+                        <h3>
+                            2. Рекомендации по действиям населения в различных конкретных ситуациях.
+                        </h3>
+                        <ol>
+                            <li>
+                                <p>
+                                    Обнаружение подозрительного предмета, который может оказаться самодельным взрывным
+                                    устройством.
+                                </p>
+                                <p>
+                                    Если вы обнаружили подозрительный предмет — не оставляйте этот факт без внимания!
+                                </p>
+                            </li>
+                            <li>
+                                На территории ТРЦ запрещено:
+                                <ol>
+                                    <li>
+                                        Курить сигареты, электронные сигареты, вейпы.
+                                    </li>
+                                    <li>
+                                        Проходить на территорию ТРЦ с велосипедами, самокатами, электросамокатами,
+                                        скейтбордами, гироскутерами (кроме случаев передачи транспорта в ремонт и
+                                        возврата/обмена покупки в магазин).
+                                    </li>
+                                    <li>
+                                        Передвигаться в галереях ТРЦ на гироскутере, сегвее, моноколесе,
+                                        электросамокате, велосипеде, самокате, роликовых коньках, скейтборде, тележке
+                                        для покупок и т. д.
+                                    </li>
+                                    <li>
+                                        Кататься по территории парковки на скейтборде, тележках для покупок, гироскутере
+                                        (во избежание травм и нарушений ПДД).
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <a href="#">
+                            Правила использования услуг.
+                        </a>
+                        <a href="#">
+                            Условия оказания услуги по предоставлению доступа в сеть «Интернет» по технологии Wi-Fi
+                            на территории ТРЦ.
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

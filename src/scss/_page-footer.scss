@@ -124,6 +124,14 @@
   }
 }
 
+a.page-footer__contacts-item {
+  @media (hover: hover) {
+    &:hover {
+      color: rgba(white, 0.7);
+    }
+  }
+}
+
 .page-footer__nav-blocks {
   grid-column: 7 / -1;
 
@@ -185,6 +193,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+
+  @media (hover: hover) {
+    &:hover {
+      color: rgba(white, 0.7);
+    }
+  }
   @include breakpoint(mobile) {
     font-size: 1.2rem;
     font-style: normal;

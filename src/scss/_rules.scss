@@ -1,0 +1,109 @@
+.rules {
+  @include blockWrapper;
+  padding-top: 8rem;
+  padding-bottom: 14rem;
+
+  @include breakpoint(mobile) {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.rules__content {
+  @include blockContent;
+}
+
+.rules__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 110%;
+  margin-bottom: 4.5rem;
+
+  @include breakpoint(mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    margin-bottom: 4rem;
+  }
+}
+
+.rules__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 2rem;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+.rules__list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.rules__card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 4rem;
+  background-color: #f2f2f2;
+  border-radius: 2rem;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  transition: color 0.2s, background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  transform: translateZ(0);
+
+  @include breakpointMF(small-tablet) {
+    &:hover {
+      box-shadow: 0px 1rem 10rem 0px rgba(0, 0, 0, 0.2);
+
+      transform: translateZ(0) scale(1.05);
+    }
+
+    .rules__list:has(.rules__card:hover) &:not(:hover) {
+      transform: translateZ(0) scale(0.95);
+      background-color: #e4e4e4;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: auto;
+    padding: 1.6rem;
+    border-radius: 2rem;
+    gap: 1.6rem;
+    padding-top: 4rem;
+  }
+}
+
+.rules__card-icon {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+
+  @include breakpoint(mobile) {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.rules__card-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 120%;
+
+  @include breakpoint(mobile) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 130%;
+  }
+}
