@@ -4,11 +4,14 @@ class Select {
   private btnTextElement: HTMLSpanElement | null = null;
   private choices: HTMLInputElement[];
   private placeholderText: string = "";
+  private resetBtns: HTMLButtonElement[] = [];
   constructor(private element: HTMLElement) {
     this.element = element;
     this.btn = this.element.querySelector<HTMLButtonElement>(
       'button[type="button"]'
     );
+
+    this.resetBtns = Array.from(this.element.querySelectorAll(".js-reset-btn"));
     if (this.btn) {
       this.btnTextElement =
         this.btn.querySelector<HTMLSpanElement>(".js-btn-text");
@@ -28,6 +31,13 @@ class Select {
     if (dataPlaceholder) {
       this.placeholderText = dataPlaceholder;
     }
+
+    this.resetBtns.forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        event.preventDefault();
+        this.reset();
+      });
+    });
 
     this.handleSelection();
   }
@@ -82,6 +92,17 @@ class Select {
   private handleOutsideClick = (event: MouseEvent) => {
     const target = event.target as HTMLElement;
     if (this.element.contains(target)) return;
+    this.close();
+  };
+
+  private reset = () => {
+    this.choices.forEach((choice) => {
+      choice.checked = false;
+    });
+    this.element.classList.remove("choice-selected");
+    if (this.btnTextElement) {
+      this.btnTextElement.textContent = this.placeholderText;
+    }
     this.close();
   };
 

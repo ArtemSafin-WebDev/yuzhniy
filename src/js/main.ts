@@ -11,6 +11,9 @@ import selects from "./selects";
 import forms from "./forms";
 import catalogDetail from "./catalogDetail";
 import tabs from "./tabs";
+import eventsSelects from "./eventsSelects";
+import eventsDatepicker from "./eventsDatepicker";
+import eventDetail from "./eventDetail";
 
 document.addEventListener("DOMContentLoaded", () => {
   benefitsSlider();
@@ -24,6 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
   tabs();
   forms();
   catalogDetail();
+  eventDetail();
+  eventsSelects();
+  eventsDatepicker();
 });
 
 window.addEventListener("load", () => {

@@ -967,11 +967,24 @@
   font-size: 6rem;
   line-height: 110%;
 
+  @include breakpointMF(small-tablet) {
+    .modal__catalog-content > & {
+      margin-bottom: 5rem;
+    }
+  }
+
   @include breakpoint(mobile) {
     font-style: normal;
     font-weight: 700;
     font-size: 3.2rem;
     line-height: 100%;
+
+    .modal__catalog-content > & {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 120%;
+    }
   }
 }
 
@@ -1001,8 +1014,29 @@
   margin-top: 2.8rem;
   max-width: 69rem;
 
+  @include breakpointMF(small-tablet) {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    transition: text-decoration-color 0.2s;
+
+    @media (hover: hover) {
+      &:hover {
+        text-decoration-color: transparent;
+      }
+    }
+  }
+
   p {
     margin-bottom: 2rem;
+
+    @include breakpoint(mobile) {
+      margin-bottom: 1rem;
+    }
     &:last-child {
       margin-bottom: 0;
     }

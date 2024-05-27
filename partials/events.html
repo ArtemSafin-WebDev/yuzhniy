@@ -1,0 +1,372 @@
+<section class="events">
+    <div class="events__content">
+        <div class="events__top-row">
+            <h1 class="events__heading">
+                Акции и события
+            </h1>
+            <div class="events__categories">
+                <ul class="events__categories-list">
+                    <li class="events__categories-list-item">
+                        <a href="/events.html" class="events__categories-link">
+                            Все
+                        </a>
+                    </li>
+                    <li class="events__categories-list-item">
+                        <a href="/events-promo.html" class="events__categories-link">
+                            Акции
+                        </a>
+                    </li>
+                    <li class="events__categories-list-item">
+                        <a href="/events-services.html" class="events__categories-link active">
+                            События
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="events__wrapper">
+            <form action="/" method="GET" class="events__filters">
+                <div class="events__filters-select js-events-select" data-placeholder="Выбрать актуальные">
+                    <div class="events__filters-select-btn-wrapper">
+                        <button class="events__filters-select-btn" type="button">
+                            <span class="events__filters-select-btn-text">
+                                <span class="events__filters-select-btn-text-inner js-btn-text">
+                                    Выбрать актуальные
+                                </span>
+                            </span>
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#accordion-arrow"></use>
+                            </svg>
+                        </button>
+                        <button class="events__filters-select-btn-clear js-reset-btn" type="button">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#clear"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="events__filters-select-dropdown">
+                        <div class="events__filters-select-dropdown-inner">
+                            <button class="events__filters-select-dropdown-reset js-reset-btn" type="button">
+                                <span class="events__filters-select-dropdown-reset-text">
+                                    Выбрать актуальные
+                                </span>
+                                <svg width="14" height="14" aria-hidden="true">
+                                    <use xlink:href="#accordion-arrow"></use>
+                                </svg>
+                            </button>
+                            <ul class="events__filters-select-dropdown-list">
+                                <li class="events__filters-select-dropdown-list-item">
+                                    <label class="events__filters-select-radio">
+                                        <input type="radio" name="filter" value="Актуальные за неделю"
+                                            class="events__filters-select-radio-input">
+                                        <span class="events__filters-select-radio-text">
+                                            Актуальные за неделю
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="events__filters-select-dropdown-list-item">
+                                    <label class="events__filters-select-radio">
+                                        <input type="radio" name="filter" value="Актуальные за месяц"
+                                            class="events__filters-select-radio-input">
+                                        <span class="events__filters-select-radio-text">
+                                            Актуальные за месяц
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="events__filters-select-dropdown-list-item">
+                                    <label class="events__filters-select-radio">
+                                        <input type="radio" name="filter" value="Актуальные за год"
+                                            class="events__filters-select-radio-input">
+                                        <span class="events__filters-select-radio-text">
+                                            Актуальные за год
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="events__filters-datepicker js-events-datepicker">
+
+
+
+                    <div class="events__filters-datepicker-dates">
+                        <div class="events__filters-datepicker-dates-text">
+                            Выберите день или период
+                        </div>
+                        <svg width="14" height="14" aria-hidden="true"
+                            class="events__filters-datepicker-dates-calendar-icon">
+                            <use xlink:href="#calendar"></use>
+                        </svg>
+                        <button class="events__filters-datepicker-reset-btn js-reset-datepicker" type="button">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#reset-date"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="events__filters-datepicker-modal">
+                        <div class="events__filters-datepicker-modal-inner">
+                            <button class="events__filters-datepicker-modal-close js-close-datepicker" type="button">
+                                <svg width="14" height="14" aria-hidden="true">
+                                    <use xlink:href="#modal-close"></use>
+                                </svg>
+                            </button>
+
+                            <input type="hidden" readonly="" class="events__filters-datepicker-input"
+                                placeholder="Выберите день или период" size="24">
+                            <div class="events__filters-datepicker-mobile-buttons">
+                                <button
+                                    class="events__filters-datepicker-mobile-reset-btn js-reset-datepicker js-close-datepicker"
+                                    type="button">
+                                    Удалить
+                                </button>
+                                <button class="events__filters-datepicker-mobile-close-btn js-close-datepicker"
+                                    type="button">
+                                    Выбрать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <ul class="events__list">
+                <li class="events__list-item">
+                    <div class="home-catalog__card">
+                        <div class="home-catalog__card-image-container">
+                            <img src="/images/events/1.webp" alt="" class="home-catalog__card-image" loading="lazy">
+                        </div>
+                        <div class="home-catalog__card-content">
+                            <div class="home-catalog__card-tags">
+                                <a href="#" class="home-catalog__card-tag">
+                                    Charuel
+                                </a>
+                            </div>
+                            <h3 class="home-catalog__card-title">
+                                День стилиста в Charuel 12.11
+                            </h3>
+                            <div class="home-catalog__card-bottom-row">
+                                <div class="home-catalog__card-date">
+                                    12 ноября
+                                </div>
+                                <div class="home-catalog__card-promo">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#sale"></use>
+                                    </svg>
+                                    Акции
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/promo.html" class="home-catalog__card-link-wrapper"></a>
+                    </div>
+                </li>
+                <li class="events__list-item">
+                    <div class="home-catalog__card">
+                        <div class="home-catalog__card-image-container">
+                            <img src="/images/events/2.webp" alt="" class="home-catalog__card-image" loading="lazy">
+                        </div>
+                        <div class="home-catalog__card-content">
+                            <div class="home-catalog__card-tags">
+                                <a href="#" class="home-catalog__card-tag">
+                                    Магазины
+                                </a>
+                            </div>
+                            <h3 class="home-catalog__card-title">
+                                Клиентские дни любимых брендов!
+                            </h3>
+                            <div class="home-catalog__card-bottom-row">
+                                <div class="home-catalog__card-date">
+                                    4-11 ноября
+                                </div>
+                                <div class="home-catalog__card-promo">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#events"></use>
+                                    </svg>
+                                    События
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/event.html" class="home-catalog__card-link-wrapper"></a>
+                    </div>
+                </li>
+                <li class="events__list-item">
+                    <div class="home-catalog__card">
+                        <div class="home-catalog__card-image-container">
+                            <img src="/images/events/3.webp" alt="" class="home-catalog__card-image" loading="lazy">
+                        </div>
+                        <div class="home-catalog__card-content">
+                            <div class="home-catalog__card-tags">
+                                <a href="#" class="home-catalog__card-tag">
+                                    Gloria Jeans
+                                </a>
+                            </div>
+                            <h3 class="home-catalog__card-title">
+                                Gloria Jeans представляет новую бунтарскую капсулу Grunge
+                            </h3>
+                            <div class="home-catalog__card-bottom-row">
+                                <div class="home-catalog__card-date">
+                                    12 ноября
+                                </div>
+                                <div class="home-catalog__card-promo">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#sale"></use>
+                                    </svg>
+                                    Акции
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/promo.html" class="home-catalog__card-link-wrapper"></a>
+                    </div>
+                </li>
+                <li class="events__list-item">
+                    <div class="home-catalog__card">
+                        <div class="home-catalog__card-image-container">
+                            <img src="/images/events/4.webp" alt="" class="home-catalog__card-image" loading="lazy">
+                        </div>
+                        <div class="home-catalog__card-content">
+                            <div class="home-catalog__card-tags">
+                                <a href="#" class="home-catalog__card-tag">
+                                    Сервисы
+                                </a>
+                            </div>
+                            <h3 class="home-catalog__card-title">
+                                Подписывайся на наш телеграм-канал!
+                            </h3>
+                            <div class="home-catalog__card-bottom-row">
+                                <div class="home-catalog__card-date">
+                                    17 октября
+                                </div>
+                                <div class="home-catalog__card-promo">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#events"></use>
+                                    </svg>
+                                    События
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/event-service.html" class="home-catalog__card-link-wrapper"></a>
+                    </div>
+                </li>
+                <li class="events__list-item">
+                    <div class="home-catalog__card">
+                        <div class="home-catalog__card-image-container">
+                            <img src="/images/events/5.webp" alt="" class="home-catalog__card-image" loading="lazy">
+                        </div>
+                        <div class="home-catalog__card-content">
+                            <div class="home-catalog__card-tags">
+                                <a href="#" class="home-catalog__card-tag">
+                                    Детям
+                                </a>
+                            </div>
+                            <h3 class="home-catalog__card-title">
+                                Детский клуб «Солнышко»
+                            </h3>
+                            <div class="home-catalog__card-bottom-row">
+                                <div class="home-catalog__card-date">
+                                    17 октября
+                                </div>
+                                <div class="home-catalog__card-promo">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#events"></use>
+                                    </svg>
+                                    События
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/event.html" class="home-catalog__card-link-wrapper"></a>
+                    </div>
+                </li>
+                <li class="events__list-item">
+                    <div class="home-catalog__card">
+                        <div class="home-catalog__card-image-container">
+                            <img src="/images/events/6.webp" alt="" class="home-catalog__card-image" loading="lazy">
+                        </div>
+                        <div class="home-catalog__card-content">
+                            <div class="home-catalog__card-tags">
+                                <a href="#" class="home-catalog__card-tag">
+                                    Gloria Jeans
+                                </a>
+                            </div>
+                            <h3 class="home-catalog__card-title">
+                                Новая осенняя коллекция Gloria Jeans!
+                            </h3>
+                            <div class="home-catalog__card-bottom-row">
+                                <div class="home-catalog__card-date">
+                                    10 октября
+                                </div>
+                                <div class="home-catalog__card-promo">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#sale"></use>
+                                    </svg>
+                                    Акции
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/promo.html" class="home-catalog__card-link-wrapper"></a>
+                    </div>
+                </li>
+                <li class="events__list-item">
+                    <div class="home-catalog__card">
+                        <div class="home-catalog__card-image-container">
+                            <img src="/images/events/7.webp" alt="" class="home-catalog__card-image" loading="lazy">
+                        </div>
+                        <div class="home-catalog__card-content">
+                            <div class="home-catalog__card-tags">
+                                <a href="#" class="home-catalog__card-tag">
+                                    Магазины
+                                </a>
+                            </div>
+                            <h3 class="home-catalog__card-title">
+                                В ТРЦ Южный открылся обновленный магазин Crockid
+                            </h3>
+                            <div class="home-catalog__card-bottom-row">
+                                <div class="home-catalog__card-date">
+                                    29 сентября
+                                </div>
+                                <div class="home-catalog__card-promo">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#events"></use>
+                                    </svg>
+                                    События
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/event.html" class="home-catalog__card-link-wrapper"></a>
+                    </div>
+                </li>
+                <li class="events__list-item">
+                    <div class="home-catalog__card">
+                        <div class="home-catalog__card-image-container">
+                            <img src="/images/events/8.webp" alt="" class="home-catalog__card-image" loading="lazy">
+                        </div>
+                        <div class="home-catalog__card-content">
+                            <div class="home-catalog__card-tags">
+                                <a href="#" class="home-catalog__card-tag">
+                                    Сервисы
+                                </a>
+                            </div>
+                            <h3 class="home-catalog__card-title">
+                                30 сентября ТРЦ Южный отметил свой День Рождения!
+                            </h3>
+                            <div class="home-catalog__card-bottom-row">
+                                <div class="home-catalog__card-date">
+                                    2 октября
+                                </div>
+                                <div class="home-catalog__card-promo">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#events"></use>
+                                    </svg>
+                                    События
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/event-service.html" class="home-catalog__card-link-wrapper"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="events__show-more">
+            Загрузить еще
+        </a>
+    </div>
+</section>

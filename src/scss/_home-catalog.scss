@@ -157,6 +157,13 @@
         opacity: 1;
       }
     }
+
+    .events__list:has(.home-catalog__card:hover) &:not(:hover) {
+      transform: scale(0.95);
+      &::after {
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -214,6 +221,11 @@
   border-radius: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.15);
 
+  &:link,
+  &:visited {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
   @include breakpoint(mobile) {
     padding: 0.8rem 1.6rem;
     font-style: normal;
@@ -222,6 +234,11 @@
     line-height: 125%;
     border-radius: 0.6rem;
   }
+}
+
+a.home-catalog__card-tag {
+  position: relative;
+  z-index: 15;
 }
 
 .home-catalog__card-title {
@@ -285,4 +302,10 @@
     height: 2rem;
     fill: currentColor;
   }
+}
+
+.home-catalog__card-link-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
 }
