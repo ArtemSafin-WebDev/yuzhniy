@@ -1,0 +1,45 @@
+.cinema-promo {
+  @include blockWrapper;
+  margin-bottom: 14rem;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 8rem;
+  }
+}
+
+.cinema-promo__content {
+  @include blockContent;
+}
+
+.cinema-promo__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 120%;
+  margin-bottom: 5.2rem;
+
+  @include breakpoint(mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    margin-bottom: 4rem;
+  }
+}
+
+.cinema-promo__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 2rem;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 1.2rem;
+  }
+}
+
+.cinema-promo__list-item {
+  display: flex;
+  flex-direction: column;
+}

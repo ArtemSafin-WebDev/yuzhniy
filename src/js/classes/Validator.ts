@@ -81,6 +81,7 @@ class Validator {
         'input[type="text"], input[type="email"], input[type="tel"]'
       )
     );
+
     this.selects = Array.from(form.querySelectorAll("[data-required-select]"));
 
     this.checkboxes = Array.from(

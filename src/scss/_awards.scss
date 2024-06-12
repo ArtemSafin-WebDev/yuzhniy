@@ -1,0 +1,217 @@
+.awards {
+  @include blockWrapper;
+  margin-bottom: 14rem;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 8rem;
+  }
+}
+
+.awards__content {
+  @include blockContent;
+}
+
+.awards__top-row {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  @include breakpoint(mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.awards__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 120%;
+
+  @include breakpoint(mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+  }
+}
+
+.awards__arrows {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-left: auto;
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+
+.awards__arrow {
+  width: 7rem;
+  height: 7rem;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
+  border: 1px solid rgba(black, 0.15);
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: black;
+    transition: fill 0.2s;
+  }
+
+  &.swiper-button-disabled {
+    cursor: default;
+    user-select: none;
+
+    svg {
+      fill: rgba(black, 0.15);
+    }
+  }
+}
+
+.awards__slider {
+  .swiper {
+    @include breakpointMF(small-tablet) {
+      width: auto;
+
+      overflow: clip;
+      overflow-clip-margin: 2rem;
+    }
+    @include breakpoint(mobile) {
+      overflow: visible;
+    }
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    width: calc(33.33% - 2rem * 2 / 3);
+    height: auto;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include breakpoint(mobile) {
+      margin-right: 0.8rem;
+      width: 100%;
+    }
+  }
+}
+
+.awards__slider-card {
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  grid-template-areas: "image content";
+  grid-gap: 2.4rem;
+  flex-grow: 1;
+  padding: 5rem;
+  transition: color 0.2s, background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  transform: translateZ(0);
+  background-color: #f2f2f2;
+  border-radius: 2rem;
+  @include breakpointMF(small-tablet) {
+    &:hover {
+      //   box-shadow: 0px 0rem 1rem 0px rgba(0, 0, 0, 0.2);
+
+      transform: translateZ(0) scale(1.05);
+    }
+
+    .awards__slider:has(.awards__slider-card:hover) &:not(:hover) {
+      transform: translateZ(0) scale(0.95);
+      background-color: #d6d6d6;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    padding: 2.4rem;
+    border-radius: 1.2rem;
+    grid-gap: 2rem;
+    grid-template-columns: 11rem 1fr;
+  }
+}
+
+.awards__slider-card-image-container {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  grid-area: image;
+  align-self: flex-start;
+
+  @include breakpoint(mobile) {
+    border-radius: 0.8rem;
+  }
+  &::before {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+  }
+}
+
+.awards__slider-card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.awards__slider-card-content {
+  display: flex;
+  flex-direction: column;
+  grid-area: content;
+  gap: 1.2rem;
+  @include breakpoint(mobile) {
+    gap: 0.8rem;
+  }
+}
+
+.awards__slider-card-year {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 120%;
+
+  @include breakpoint(mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 130%;
+  }
+}
+
+.awards__slider-card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 120%;
+  @include breakpoint(mobile) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 130%;
+  }
+}
+
+.awards__slider-card-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-top: auto;
+  line-height: 120%;
+  @include breakpoint(mobile) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 130%;
+  }
+}

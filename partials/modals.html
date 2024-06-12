@@ -176,6 +176,200 @@
         </div>
     </div>
 </div>
+<div class="modal js-modal" id="rent-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-modal-close" type="button">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#modal-close"></use>
+            </svg>
+        </button>
+        <div class="modal__callback">
+            <div class="modal__callback-left-col">
+                <h3 class="modal__callback-heading">
+                    Хотите оставить<br>
+                    заявку на аренду?
+                </h3>
+                <div class="modal__callback-text">
+                    <p>
+                        При рассмотрении заявки на аренду мы примем во внимание концепцию торговой точки, ваш опыт
+                        торговли и предложим подходящую локацию в ТРЦ «Южный».
+                    </p>
+                </div>
+            </div>
+            <div class="modal__callback-right-col">
+                <form action="/" method="POST" class="modal__callback-form js-form">
+                    <div class="modal__callback-fields">
+                        <div class="modal__callback-field">
+                            <label class="modal__callback-field-label">
+                                <input type="text" class="modal__callback-input" placeholder="Имя" required="">
+                                <span class="modal__callback-field-label-text">
+                                    Имя
+                                </span>
+                            </label>
+                        </div>
+                        <div class="modal__callback-field">
+                            <div class="modal__callback-select js-select" data-placeholder="Тема обращения"
+                                data-required-select="">
+                                <button class="modal__callback-select-btn" type="button">
+                                    <span class="modal__callback-select-btn-text">
+                                        <span class="modal__callback-select-btn-text-inner js-btn-text">
+                                            Тема обращения
+                                        </span>
+                                    </span>
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#accordion-arrow"></use>
+                                    </svg>
+                                </button>
+                                <div class="modal__callback-select-dropdown">
+                                    <div class="modal__callback-select-dropdown-inner">
+                                        <ul class="modal__callback-select-dropdown-list">
+                                            <li class="modal__callback-select-dropdown-list-item">
+                                                <label class="modal__callback-select-dropdown-choice">
+                                                    <input type="radio" name="subject"
+                                                        class="modal__callback-select-dropdown-choice-input"
+                                                        value="Оставить отзыв о ТРЦ">
+                                                    <span class="modal__callback-select-dropdown-choice-text">
+                                                        Оставить отзыв о ТРЦ
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__callback-select-dropdown-list-item">
+                                                <label class="modal__callback-select-dropdown-choice">
+                                                    <input type="radio" name="subject"
+                                                        class="modal__callback-select-dropdown-choice-input"
+                                                        value="Оставить отзыв о магазине">
+                                                    <span class="modal__callback-select-dropdown-choice-text">
+                                                        Оставить отзыв о магазине
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__callback-select-dropdown-list-item">
+                                                <label class="modal__callback-select-dropdown-choice">
+                                                    <input type="radio" name="subject"
+                                                        class="modal__callback-select-dropdown-choice-input"
+                                                        value="По вопросам аренды помещений" checked="">
+                                                    <span class="modal__callback-select-dropdown-choice-text">
+                                                        По вопросам аренды помещений
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__callback-select-dropdown-list-item">
+                                                <label class="modal__callback-select-dropdown-choice">
+                                                    <input type="radio" name="subject"
+                                                        class="modal__callback-select-dropdown-choice-input"
+                                                        value="По вопросам рекламы">
+                                                    <span class="modal__callback-select-dropdown-choice-text">
+                                                        По вопросам рекламы
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__callback-select-dropdown-list-item">
+                                                <label class="modal__callback-select-dropdown-choice">
+                                                    <input type="radio" name="subject"
+                                                        class="modal__callback-select-dropdown-choice-input"
+                                                        value="Записать ребёнка на развлекательную программу">
+                                                    <span class="modal__callback-select-dropdown-choice-text">
+                                                        Записать ребёнка на развлекательную программу
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__callback-select-dropdown-list-item">
+                                                <label class="modal__callback-select-dropdown-choice">
+                                                    <input type="radio" name="subject"
+                                                        class="modal__callback-select-dropdown-choice-input"
+                                                        value="Подписаться на новостной дайджест">
+                                                    <span class="modal__callback-select-dropdown-choice-text">
+                                                        Подписаться на новостной дайджест
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__callback-field">
+                            <label class="modal__callback-field-label">
+                                <input type="tel" class="modal__callback-input" placeholder="Телефон" required="">
+                                <span class="modal__callback-field-label-text">
+                                    Телефон
+                                </span>
+                            </label>
+                        </div>
+                        <div class="modal__callback-field">
+                            <label class="modal__callback-field-label">
+                                <input type="email" class="modal__callback-input" placeholder="E-mail">
+                                <span class="modal__callback-field-label-text">
+                                    E-mail
+                                </span>
+                            </label>
+                        </div>
+                        <div class="modal__callback-field">
+                            <label class="modal__callback-field-label">
+                                <input type="text" class="modal__callback-input" placeholder="Ваша должность">
+                                <span class="modal__callback-field-label-text">
+                                    Ваша должность
+                                </span>
+                            </label>
+                        </div>
+                        <div class="modal__callback-field">
+                            <label class="modal__callback-field-label">
+                                <input type="text" class="modal__callback-input" placeholder="Название вашей компании">
+                                <span class="modal__callback-field-label-text">
+                                    Название вашей компании
+                                </span>
+                            </label>
+                        </div>
+                        <div class="modal__callback-field modal__callback-field--fullwidth">
+                            <label class="modal__callback-field-label">
+                                <input type="comment" class="modal__callback-input" placeholder="Текст" required="">
+                                <span class="modal__callback-field-label-text">
+                                    Текст
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal__callback-bottom-row">
+                        <label class="modal__callback-file-upload js-file-upload">
+                            <input type="file" name="file" class="modal__callback-file-upload-input">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#file"></use>
+                            </svg>
+                            <span class="modal__callback-file-text">
+                                <span class="modal__callback-file-text-inner js-file-upload-text">
+                                    Прикрепить файл
+                                </span>
+
+                            </span>
+                        </label>
+                        <div class="modal__callback-policy">
+
+
+                            <label class="modal__callback-policy-checkbox">
+                                <input type="checkbox" name="policy" value="Y"
+                                    class="modal__callback-policy-checkbox-input" required="" checked="">
+                                <span class="modal__callback-policy-checkbox-mark">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                                <span class="modal__callback-policy-checkbox-text">
+                                    Я принимаю <a href="#">
+                                        Политику обработки персональных данных
+                                    </a>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="modal__callback-submit" type="submit">
+                        Написать нам
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="modal js-modal" id="callback-modal-success">
     <div class="modal__inner modal__inner--success">
         <button class="modal__close js-modal-close" type="button">
@@ -230,7 +424,318 @@
 
     </div>
 </div>
+<div class="modal js-modal" id="child-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-modal-close" type="button">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#modal-close"></use>
+            </svg>
+        </button>
+        <div class="modal__callback">
+            <div class="modal__callback-left-col">
+                <h3 class="modal__callback-heading">
+                    Регистрация<br>
+                    участников
+                </h3>
+                <div class="modal__callback-text">
+                    <p>
+                        Чтобы принять участие в активностях детского клуба «Солнышко» нужно подать заявку и тем самым
+                        подтвердить своё участие.
+                    </p>
+                </div>
+            </div>
+            <div class="modal__callback-right-col">
+                <form action="/" method="POST" class="modal__callback-form js-form">
+                    <div class="modal__callback-blocks">
 
+
+                        <div class="modal__callback-block">
+                            <h3 class="modal__callback-block-heading">
+                                Основная информация
+                            </h3>
+
+                            <div class="modal__callback-fields">
+
+                                <div class="modal__callback-field modal__callback-field--fullwidth">
+                                    <div class="modal__callback-select js-select" data-placeholder="Тема обращения"
+                                        data-required-select="">
+                                        <button class="modal__callback-select-btn" type="button">
+                                            <span class="modal__callback-select-btn-text">
+                                                <span class="modal__callback-select-btn-text-inner js-btn-text">
+                                                    Выбор программы
+                                                </span>
+                                            </span>
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#accordion-arrow"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="modal__callback-select-dropdown">
+                                            <div class="modal__callback-select-dropdown-inner">
+                                                <ul class="modal__callback-select-dropdown-list">
+                                                    <li class="modal__callback-select-dropdown-list-item">
+                                                        <label class="modal__callback-select-dropdown-choice">
+                                                            <input type="radio" name="subject"
+                                                                class="modal__callback-select-dropdown-choice-input"
+                                                                value="Оставить отзыв о ТРЦ">
+                                                            <span class="modal__callback-select-dropdown-choice-text">
+                                                                Оставить отзыв о ТРЦ
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="modal__callback-select-dropdown-list-item">
+                                                        <label class="modal__callback-select-dropdown-choice">
+                                                            <input type="radio" name="subject"
+                                                                class="modal__callback-select-dropdown-choice-input"
+                                                                value="Оставить отзыв о магазине">
+                                                            <span class="modal__callback-select-dropdown-choice-text">
+                                                                Оставить отзыв о магазине
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="modal__callback-select-dropdown-list-item">
+                                                        <label class="modal__callback-select-dropdown-choice">
+                                                            <input type="radio" name="subject"
+                                                                class="modal__callback-select-dropdown-choice-input"
+                                                                value="По вопросам аренды помещений">
+                                                            <span class="modal__callback-select-dropdown-choice-text">
+                                                                По вопросам аренды помещений
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="modal__callback-select-dropdown-list-item">
+                                                        <label class="modal__callback-select-dropdown-choice">
+                                                            <input type="radio" name="subject"
+                                                                class="modal__callback-select-dropdown-choice-input"
+                                                                value="По вопросам рекламы">
+                                                            <span class="modal__callback-select-dropdown-choice-text">
+                                                                По вопросам рекламы
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="modal__callback-select-dropdown-list-item">
+                                                        <label class="modal__callback-select-dropdown-choice">
+                                                            <input type="radio" name="subject"
+                                                                class="modal__callback-select-dropdown-choice-input"
+                                                                value="Записать ребёнка на развлекательную программу"
+                                                                checked="">
+                                                            <span class="modal__callback-select-dropdown-choice-text">
+                                                                Записать ребёнка на развлекательную программу
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="modal__callback-select-dropdown-list-item">
+                                                        <label class="modal__callback-select-dropdown-choice">
+                                                            <input type="radio" name="subject"
+                                                                class="modal__callback-select-dropdown-choice-input"
+                                                                value="Подписаться на новостной дайджест">
+                                                            <span class="modal__callback-select-dropdown-choice-text">
+                                                                Подписаться на новостной дайджест
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__callback-field modal__callback-field--fullwidth">
+                                    <div class="modal__calendar js-modal-calendar"
+                                        data-placeholder-text="Дата рождения">
+                                        <button class="modal__calendar-btn" type="button">
+                                            <span class="modal__calendar-btn-text">
+                                                <span class="modal__calendar-btn-text-inner">
+                                                    Дата посещения
+                                                </span>
+                                            </span>
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#calendar"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="modal__calendar-dropdown">
+                                            <div class="modal__calendar-dropdown-inner">
+
+
+                                                <input type="text" readonly="" class="modal__calendar-input"
+                                                    placeholder="Дата посещения" required="">
+                                                <div class="modal__calendar-buttons">
+                                                    <button
+                                                        class="modal__calendar-reset-btn js-reset-datepicker js-close-datepicker"
+                                                        type="button">
+                                                        Удалить
+                                                    </button>
+                                                    <button class="modal__calendar-close-btn js-close-datepicker"
+                                                        type="button">
+                                                        Выбрать
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__callback-field">
+                                    <label class="modal__callback-field-label">
+                                        <input type="text" class="modal__callback-input" placeholder="Имя родителя"
+                                            required="">
+                                        <span class="modal__callback-field-label-text">
+                                            Имя родителя
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="modal__callback-field">
+                                    <label class="modal__callback-field-label">
+                                        <input type="text" class="modal__callback-input" placeholder="Фамилия родителя"
+                                            required="">
+                                        <span class="modal__callback-field-label-text">
+                                            Фамилия родителя
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="modal__callback-field">
+                                    <label class="modal__callback-field-label">
+                                        <input type="tel" class="modal__callback-input" placeholder="Телефон"
+                                            required="">
+                                        <span class="modal__callback-field-label-text">
+                                            Телефон
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="modal__callback-field">
+                                    <label class="modal__callback-field-label">
+                                        <input type="email" class="modal__callback-input" placeholder="E-mail">
+                                        <span class="modal__callback-field-label-text">
+                                            E-mail
+                                        </span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal__callback-block">
+                            <h3 class="modal__callback-block-heading">
+                                Данные о ребенке
+                            </h3>
+
+                            <div class="modal__callback-fields">
+                                <div class="modal__callback-field modal__callback-field--fullwidth">
+                                    <label class="modal__callback-field-label">
+                                        <input type="text" class="modal__callback-input" placeholder="Количество детей"
+                                            required="" inputmode="numeric">
+                                        <span class="modal__callback-field-label-text">
+                                            Количество детей
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="modal__callback-field">
+                                    <div class="modal__callback-select js-select" data-placeholder="Пол ребенка"
+                                        data-required-select="">
+                                        <button class="modal__callback-select-btn" type="button">
+                                            <span class="modal__callback-select-btn-text">
+                                                <span class="modal__callback-select-btn-text-inner js-btn-text">
+                                                    Пол ребенка
+                                                </span>
+                                            </span>
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#accordion-arrow"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="modal__callback-select-dropdown">
+                                            <div class="modal__callback-select-dropdown-inner">
+                                                <ul class="modal__callback-select-dropdown-list">
+                                                    <li class="modal__callback-select-dropdown-list-item">
+                                                        <label class="modal__callback-select-dropdown-choice">
+                                                            <input type="radio" name="gender"
+                                                                class="modal__callback-select-dropdown-choice-input"
+                                                                value="Мальчик">
+                                                            <span class="modal__callback-select-dropdown-choice-text">
+                                                                Мальчик
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="modal__callback-select-dropdown-list-item">
+                                                        <label class="modal__callback-select-dropdown-choice">
+                                                            <input type="radio" name="gender"
+                                                                class="modal__callback-select-dropdown-choice-input"
+                                                                value="Девочка">
+                                                            <span class="modal__callback-select-dropdown-choice-text">
+                                                                Девочка
+                                                            </span>
+                                                        </label>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__callback-field">
+                                    <div class="modal__calendar js-modal-calendar"
+                                        data-placeholder-text="Дата рождения">
+                                        <button class="modal__calendar-btn" type="button">
+                                            <span class="modal__calendar-btn-text">
+                                                <span class="modal__calendar-btn-text-inner">
+                                                    Дата рождения
+                                                </span>
+                                            </span>
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#calendar"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="modal__calendar-dropdown">
+                                            <div class="modal__calendar-dropdown-inner">
+
+
+                                                <input type="text" readonly="" class="modal__calendar-input"
+                                                    placeholder="Дата рождения" required="">
+                                                <div class="modal__calendar-buttons">
+                                                    <button
+                                                        class="modal__calendar-reset-btn js-reset-datepicker js-close-datepicker"
+                                                        type="button">
+                                                        Удалить
+                                                    </button>
+                                                    <button class="modal__calendar-close-btn js-close-datepicker"
+                                                        type="button">
+                                                        Выбрать
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__callback-bottom-row">
+
+                        <div class="modal__callback-policy">
+
+
+                            <label class="modal__callback-policy-checkbox">
+                                <input type="checkbox" name="policy" value="Y"
+                                    class="modal__callback-policy-checkbox-input" required="" checked="">
+                                <span class="modal__callback-policy-checkbox-mark">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                                <span class="modal__callback-policy-checkbox-text">
+                                    Я принимаю <a href="#">
+                                        Политику обработки персональных данных
+                                    </a>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="modal__callback-submit" type="submit">
+                        Написать нам
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="modal modal--rules js-modal" id="rules-modal">
     <div class="modal__inner">

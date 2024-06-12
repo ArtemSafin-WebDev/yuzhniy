@@ -164,6 +164,12 @@
         opacity: 1;
       }
     }
+    .cinema-promo__list:has(.home-catalog__card:hover) &:not(:hover) {
+      transform: scale(0.95);
+      &::after {
+        opacity: 1;
+      }
+    }
   }
 }
 

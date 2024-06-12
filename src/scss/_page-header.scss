@@ -2,6 +2,15 @@
   @include blockWrapper;
   padding: 1.8rem 0;
 
+  &--white {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    color: white;
+  }
+
   @include breakpoint(mobile) {
     padding: 1.6rem 0;
   }
@@ -41,8 +50,19 @@
   height: auto;
   display: block;
 
+  @include breakpointMF(small-tablet) {
+    .page-header--white & {
+      filter: invert(100%);
+    }
+  }
+
   @include breakpoint(mobile) {
     width: 12rem;
+    transition: filter 0.4s;
+
+    body:not(.menu-open) .page-header--white & {
+      filter: invert(100%);
+    }
   }
 }
 
@@ -86,7 +106,29 @@
     border: 1px solid #b8b8b8;
     border-radius: 1rem;
     position: relative;
+    transition: border-color 0.4s, background-color 0.4s;
+
+    .page-header--white & {
+      border-color: rgba(255, 255, 255, 0.4);
+    }
     &:hover {
+      border-color: #b8b8b8;
+      background-color: #fff;
+
+      .page-header__info-btn {
+        color: black;
+      }
+
+      .page-header__info-btn-time {
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      .page-header__info-btn-content {
+        svg {
+          fill: black;
+        }
+      }
+
       .page-header__info-dropdown {
         opacity: 1;
         visibility: inherit;
@@ -114,6 +156,7 @@
     flex-shrink: 0;
     justify-content: space-between;
     gap: 0.5rem;
+    transition: color 0.4s;
   }
 
   @include breakpoint(mobile) {
@@ -135,19 +178,32 @@
   align-items: center;
   gap: 1.2rem;
 
-  @include breakpoint(mobile) {
-    gap: 1rem;
-  }
-
   svg {
     flex-shrink: 0;
     width: 2rem;
     height: 2rem;
     fill: black;
+    transition: fill 0.4s;
 
     @include breakpoint(mobile) {
       width: 1.2rem;
       height: 1.2rem;
+    }
+  }
+
+  @include breakpointMF(small-tablet) {
+    .page-header--white & {
+      svg {
+        fill: white;
+      }
+    }
+  }
+  @include breakpoint(mobile) {
+    gap: 1rem;
+    body:not(.menu-open) .page-header--white & {
+      svg {
+        fill: white;
+      }
     }
   }
 }
@@ -155,6 +211,11 @@
 .page-header__info-btn-time {
   @include breakpointMF(small-tablet) {
     color: rgba(0, 0, 0, 0.5);
+    transition: color 0.4s;
+
+    .page-header--white & {
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
 
   @include breakpoint(mobile) {
@@ -174,6 +235,7 @@
     left: -1px;
     height: auto;
     background-color: #ffffff;
+    color: black;
     border: 1px solid #b8b8b8;
     z-index: 80;
     border-radius: 1rem;
@@ -358,6 +420,13 @@
       height: 2rem;
       fill: black;
     }
+
+    .page-header--white & {
+      border-color: rgba(255, 255, 255, 0.4);
+      svg {
+        fill: white;
+      }
+    }
   }
 
   @include breakpoint(mobile) {
@@ -401,6 +470,13 @@
       width: 2rem;
       height: 2rem;
       fill: black;
+    }
+
+    .page-header--white & {
+      border-color: rgba(255, 255, 255, 0.4);
+      svg {
+        fill: white;
+      }
     }
   }
 
@@ -446,6 +522,10 @@
   display: flex;
   align-items: center;
 
+  .page-header--white & {
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
   @include breakpoint(mobile) {
     padding: 1.4rem 1.6rem;
     flex-shrink: 0;
@@ -468,6 +548,12 @@
     @include breakpoint(mobile) {
       width: 1.5rem;
       height: 1.5rem;
+    }
+  }
+
+  .page-header--white & {
+    svg {
+      fill: white;
     }
   }
 }
@@ -493,6 +579,13 @@
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.5);
+  }
+
+  .page-header--white & {
+    color: white;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
   }
 }
 
@@ -530,10 +623,26 @@
     transition: fill 0.2s;
   }
 
+  @include breakpointMF(small-tablet) {
+    .page-header--white & {
+      border-color: rgba(255, 255, 255, 0.4);
+      svg {
+        fill: white;
+      }
+    }
+  }
+
   @include breakpoint(mobile) {
     width: 4.2rem;
     height: 4.2rem;
     border-radius: 0.6rem;
+
+    body:not(.menu-open) .page-header--white & {
+      border-color: rgba(255, 255, 255, 0.4);
+      svg {
+        fill: white;
+      }
+    }
 
     svg {
       width: 1.5rem;
@@ -607,6 +716,14 @@
             visibility: inherit;
             transition: opacity 0.2s, visibility 0.2s;
           }
+        }
+      }
+    }
+
+    .page-header--white & {
+      &:hover {
+        .page-header__nav-link {
+          color: rgba(white, 0.6);
         }
       }
     }
@@ -689,6 +806,7 @@
     background-color: #fff;
     border-radius: 2rem;
     padding: 2.4rem;
+    color: black;
   }
 }
 
@@ -755,7 +873,7 @@
     transition: opacity 0.4s, visibility 0s linear 0.4s;
     overscroll-behavior-y: contain;
     overflow-y: auto;
-
+    color: black;
     body:not(.loaded) & {
       display: none;
     }
@@ -820,6 +938,14 @@
       border-radius: 0.4rem;
       background-color: black;
       transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .page-header--white & {
+      border-color: rgba(255, 255, 255, 0.4);
+
+      & > span {
+        background-color: white;
+      }
     }
   }
 }

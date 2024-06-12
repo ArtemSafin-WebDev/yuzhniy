@@ -14,6 +14,13 @@ import tabs from "./tabs";
 import eventsSelects from "./eventsSelects";
 import eventsDatepicker from "./eventsDatepicker";
 import eventDetail from "./eventDetail";
+import collabIntroSlider from "./collabIntroSlider";
+import awardsSlider from "./awardsSlider";
+import childClubIntroSlider from "./childClubIntroSlider";
+import nowOnScreenSlider from "./nowOnScreenSlider";
+import cinemaAbout from "./cinemaAbout";
+import cinemaIntroSlider from "./cinemaIntroSlider";
+import modalCalendar from "./modalCalendar";
 
 document.addEventListener("DOMContentLoaded", () => {
   benefitsSlider();
@@ -30,6 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
   eventDetail();
   eventsSelects();
   eventsDatepicker();
+  collabIntroSlider();
+  awardsSlider();
+  childClubIntroSlider();
+  nowOnScreenSlider();
+  cinemaAbout();
+  cinemaIntroSlider();
+  modalCalendar();
 });
 
 window.addEventListener("load", () => {

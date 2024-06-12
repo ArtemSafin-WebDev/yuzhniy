@@ -1,0 +1,281 @@
+<section class="child-club-intro">
+    <div class="child-club-intro__content">
+        <div class="child-club-intro__wrapper">
+            <div class="child-club-intro__bg">
+                <picture>
+                    <source srcset="/images/child-club-mobile.webp" media="(max-width: 640px)" />
+                    <img src="/images/child-club.webp" alt="" class="child-club-intro__bg-image" />
+                </picture>
+            </div>
+            <h1 class="child-club-intro__heading">
+                Детский клуб
+            </h1>
+            <div class="child-club-intro__slider js-child-club-intro-slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="child-club-intro__slider-card">
+                                <div class="child-club-intro__slider-card-row">
+                                    <h3 class="child-club-intro__slider-card-title">
+                                        в 16:00
+                                    </h3>
+                                    <img src="/images/child-club-intro/1.svg" alt=""
+                                        class="child-club-intro__slider-card-icon">
+                                </div>
+                                <div class="child-club-intro__slider-card-text">
+                                    2 раза в неделю<br> каждую сб-вс в 16:00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="child-club-intro__slider-card">
+                                <div class="child-club-intro__slider-card-row">
+                                    <h3 class="child-club-intro__slider-card-title">
+                                        2 этаж
+                                    </h3>
+                                    <img src="/images/child-club-intro/2.svg" alt=""
+                                        class="child-club-intro__slider-card-icon">
+                                </div>
+                                <div class="child-club-intro__slider-card-text">
+                                    Шопинг-курорта (сцена фуд-корта)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="child-club-intro__slider-card">
+                                <div class="child-club-intro__slider-card-row">
+                                    <h3 class="child-club-intro__slider-card-title">
+                                        Бесплатно
+                                    </h3>
+                                    <img src="/images/child-club-intro/3.svg" alt=""
+                                        class="child-club-intro__slider-card-icon">
+                                </div>
+                                <div class="child-club-intro__slider-card-text">
+                                    Все занятия в клубе<br> бесплатные
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#child-modal"
+                                class="child-club-intro__slider-card child-club-intro__slider-card--black">
+                                <div class="child-club-intro__slider-card-row">
+                                    <h3 class="child-club-intro__slider-card-title">
+                                        Запись
+                                    </h3>
+                                    <img src="/images/child-club-intro/4.svg" alt=""
+                                        class="child-club-intro__slider-card-icon">
+                                </div>
+                                <div class="child-club-intro__slider-card-text">
+                                    Зарегистрироваться на занятия
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#child-modal" class="child-club-intro__mobile-link">
+            Зарегистрироваться на занятия
+        </a>
+    </div>
+</section>
+
+<section class="events">
+    <div class="events__content">
+        <div class="events__child-row">
+            <h2 class="events__child-heading">
+                Расписание занятий
+            </h2>
+            <a href="#" class="events__child-schedule">
+                <svg width="14" height="14" aria-hidden="true">
+                    <use xlink:href="#download"></use>
+                </svg>
+                Полное расписание
+            </a>
+        </div>
+        <div class="events__wrapper events__wrapper--child">
+            <div class="events__filters-child-wrapper">
+
+
+                <form action="/" method="GET" class="events__filters">
+
+                    <div class="events__filters-datepicker js-events-datepicker">
+                        <div class="events__filters-datepicker-dates">
+                            <div class="events__filters-datepicker-dates-text">
+                                Выберите день или период
+                            </div>
+                            <svg width="14" height="14" aria-hidden="true"
+                                class="events__filters-datepicker-dates-calendar-icon">
+                                <use xlink:href="#calendar"></use>
+                            </svg>
+                            <button class="events__filters-datepicker-reset-btn js-reset-datepicker" type="button">
+                                <svg width="14" height="14" aria-hidden="true">
+                                    <use xlink:href="#reset-date"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="events__filters-datepicker-modal">
+                            <div class="events__filters-datepicker-modal-inner">
+                                <button class="events__filters-datepicker-modal-close js-close-datepicker"
+                                    type="button">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#modal-close"></use>
+                                    </svg>
+                                </button>
+
+                                <input type="hidden" readonly="" class="events__filters-datepicker-input"
+                                    placeholder="Выберите день или период" size="24">
+                                <div class="events__filters-datepicker-mobile-buttons">
+                                    <button
+                                        class="events__filters-datepicker-mobile-reset-btn js-reset-datepicker js-close-datepicker"
+                                        type="button">
+                                        Удалить
+                                    </button>
+                                    <button class="events__filters-datepicker-mobile-close-btn js-close-datepicker"
+                                        type="button">
+                                        Выбрать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="events__filters-child-photos">
+                    <div class="events__filters-child-photos-text">
+                        Чтобы скачать фотографии
+                        с мероприятия переходи
+                        в группу ВКонтакте
+                    </div>
+                    <a href="#" class="events__filters-child-photos-link">
+                        Перейти
+                    </a>
+                </div>
+            </div>
+            <ul class="events__list">
+                <li class="events__list-item">
+                    <a href="#" class="child-card">
+                        <div class="child-card__image-container">
+                            <img src="/images/child-catalog/1.webp" alt="" class="child-card__image">
+                        </div>
+                        <div class="child-card__content">
+                            <div class="child-card__row">
+                                <div class="child-card__date">
+                                    18.11
+                                </div>
+                                <div class="child-card__time">
+                                    суббота<br>16:00 – 16:40
+                                </div>
+                            </div>
+                            <h3 class="child-card__title">
+                                Анимационная программа «Лесные друзья»
+                            </h3>
+                            <div class="child-card__text">
+                                Детей ждут игры с забавными обитателями леса: елочками, пенечками и лесными зверьками,
+                                разгадывание задач, головоломок и квесты.
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="events__list-item">
+                    <a href="#" class="child-card">
+                        <div class="child-card__image-container">
+                            <img src="/images/child-catalog/2.webp" alt="" class="child-card__image">
+                        </div>
+                        <div class="child-card__content">
+                            <div class="child-card__row">
+                                <div class="child-card__date">
+                                    18.11
+                                </div>
+                                <div class="child-card__time">
+                                    суббота<br>16:40 – 17:00
+                                </div>
+                            </div>
+                            <h3 class="child-card__title">
+                                Мастер-класс «Веселые раскраски»
+                            </h3>
+                            <div class="child-card__text">
+                                Раскраска поможет ребёнку развить мелкую моторику, воображение и внимание. Свобода
+                                в выборе инструментов для рисования и цветов.
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="events__list-item">
+                    <a href="#" class="child-card">
+                        <div class="child-card__image-container">
+                            <img src="/images/child-catalog/3.webp" alt="" class="child-card__image">
+                        </div>
+                        <div class="child-card__content">
+                            <div class="child-card__row">
+                                <div class="child-card__date">
+                                    19.11
+                                </div>
+                                <div class="child-card__time">
+                                    воскресенье<br>16:00 – 16:40
+                                </div>
+                            </div>
+                            <h3 class="child-card__title">
+                                Анимационная программа «Зайки на лужайке»
+                            </h3>
+                            <div class="child-card__text">
+                                Использование спортивного оборудования для развития основных движений детей (в том числе
+                                подлезать под дугами и через препятствия).
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="events__list-item">
+                    <a href="#" class="child-card">
+                        <div class="child-card__image-container">
+                            <img src="/images/child-catalog/4.webp" alt="" class="child-card__image">
+                        </div>
+                        <div class="child-card__content">
+                            <div class="child-card__row">
+                                <div class="child-card__date">
+                                    19.11
+                                </div>
+                                <div class="child-card__time">
+                                    воскресенье<br>16:40 – 17:00
+                                </div>
+                            </div>
+                            <h3 class="child-card__title">
+                                Мастер-класс по аппликации «Овощи на грядке»
+                            </h3>
+                            <div class="child-card__text">
+                                Формирование умения использовать клей, бугаму, закрепление умения подбирать цвет для
+                                овощей.
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="events__list-item">
+                    <a href="#" class="child-card">
+                        <div class="child-card__image-container">
+                            <img src="/images/child-catalog/5.webp" alt="" class="child-card__image">
+                        </div>
+                        <div class="child-card__content">
+                            <div class="child-card__row">
+                                <div class="child-card__date">
+                                    25.11
+                                </div>
+                                <div class="child-card__time">
+                                    суббота<br>16:00 – 16:40
+                                </div>
+                            </div>
+                            <h3 class="child-card__title">
+                                Анимационная программа «Щенячий патруль»
+                            </h3>
+                            <div class="child-card__text">
+                                Участники анимационной программы должны будут пройти ряд веселых испытаний.
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <a href="#" class="events__show-more">
+            Загрузить еще
+        </a>
+    </div>
+</section>
