@@ -1,0 +1,116 @@
+<section class="map js-shop-map" data-url="/data/map.json" id="map">
+    <div class="map__content">
+        <h2 class="map__heading">
+            Магазины для всей семьи
+        </h2>
+        <div class="map__controls">
+
+            <div class="map__selector">
+                <div class="map__selector-default">
+                    <div class="map__selector-search-wrapper">
+                        <input type="search" class="map__selector-search-input" placeholder="Что будем искать?">
+                        <button class="map__selector-search-submit">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#map-search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="map__selector-selected-category-wrapper" style="display: none;">
+                        <button class="map__selector-selected-category-back" type="button">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#back"></use>
+                            </svg>
+                        </button>
+                        <div class="map__selector-selected-category-text">
+                            <div class="map__selector-selected-category-text-inner">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="map__selector-default-btn js-show-categories">
+                        <svg width="14" height="14" aria-hidden="true">
+                            <use xlink:href="#map-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="map__selector-categories">
+
+                </div>
+                <div class="map__selector-subcategories" style="display: none;">
+                    <div class="map__selector-subcategories-inner">
+
+                    </div>
+                </div>
+                <div class="map__selector-results" style="display: none;">
+                    <div class="map__selector-floors-filters">
+                        <button class="map__selector-floors-filters-btn">
+                            <span class="map__selector-floors-filters-btn-mark">
+
+                            </span>
+                            0 этаж
+                        </button>
+                        <button class="map__selector-floors-filters-btn">
+                            <span class="map__selector-floors-filters-btn-mark">
+
+                            </span>
+                            1 этаж
+                        </button>
+                        <button class="map__selector-floors-filters-btn">
+                            <span class="map__selector-floors-filters-btn-mark">
+
+                            </span>
+                            2 этаж
+                        </button>
+                    </div>
+                    <div class="map__selector-results-inner">
+
+                    </div>
+                </div>
+            </div>
+            <div class="map__zoom-btns">
+                <button class="map__zoom-btn map__zoom-btn--minus">
+                    <svg width="14" height="14" aria-hidden="true">
+                        <use xlink:href="#minus"></use>
+                    </svg>
+                </button>
+                <button class="map__zoom-btn map__zoom-btn--plus">
+                    <svg width="14" height="14" aria-hidden="true">
+                        <use xlink:href="#plus"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="map__floors">
+                <button class="map__floor-btn">
+                    0
+                </button>
+                <button class="map__floor-btn">
+                    1
+                </button>
+                <button class="map__floor-btn">
+                    2
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="map__wrapper">
+        <div class="map__wrapper-inner">
+            <div class="map__container f-panzoom" id="myPanzoom">
+
+                <div class="map__pane f-panzoom__content">
+                    <div class="map__pane-inner">
+
+                        {{> map-zero-floor }}
+                        {{> map-first-floor }}
+                        {{> map-second-floor }}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="map__mobile-popovers">
+
+    </div>
+</section>

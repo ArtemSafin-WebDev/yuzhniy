@@ -1,0 +1,1216 @@
+{
+  "points": [
+    {
+      "title": "Auchan",
+      "popoverIcon": "/images/map/auchan-color.svg",
+      "tags": ["Гипермаркет"],
+      "area": "auchan-area",
+      "mapIcon": {
+        "width": 114,
+        "url": "/images/map/auchan.svg"
+      },
+      "xPos": 86,
+      "yPos": 40,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "New Yorker",
+      "popoverIcon": "/images/map/ny-color.svg",
+      "tags": ["Женская одежда", "Мужская одежда"],
+      "area": "new-yorker-area",
+      "mapIcon": {
+        "width": 71,
+        "url": "/images/map/new-yorker.svg"
+      },
+      "xPos": 54,
+      "yPos": 12,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Gloria Jeans",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда", "Мужская одежда"],
+      "area": "gj-area",
+      "mapIcon": {
+        "width": 36,
+        "url": "/images/map/gj.svg"
+      },
+      "xPos": 64,
+      "yPos": 12,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Твое",
+      "popoverIcon": "/images/map/tvoe-color.svg",
+      "tags": ["Женская одежда", "Мужская одежда"],
+      "area": "tvoe-area",
+      "mapIcon": {
+        "width": 40,
+        "url": "/images/map/tvoe.svg"
+      },
+      "xPos": 51,
+      "yPos": 28,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "ZENDEN",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Обувь"],
+      "area": "zenden-area",
+      "mapIcon": {
+        "width": 71,
+        "url": "/images/map/zenden.svg"
+      },
+      "xPos": 66,
+      "yPos": 35.5,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Корд-Оптика",
+      "popoverIcon": "/images/map/kord-color.svg",
+      "tags": ["Аксессуары"],
+      "area": "kord-area",
+      "mapIcon": {
+        "width": 20,
+        "url": "/images/map/kord.svg"
+      },
+      "xPos": 60,
+      "yPos": 33,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Анекс-тур",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Спорт и отдых"],
+      "area": "anex-area",
+      "mapIcon": {
+        "width": 15,
+        "url": "/images/map/anex.svg"
+      },
+      "xPos": 61.6,
+      "yPos": 33,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Beanhearts",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Кофейни", "Кондитерские", "Бизнес ланч", "Напитки"],
+      "area": "beanhearts-area",
+      "mapIcon": {
+        "width": 20,
+        "url": "/images/map/beanhearts.svg"
+      },
+      "xPos": 56.4,
+      "yPos": 39.9,
+      "detailsUrl": "/food.html",
+      "floor": 1
+    },
+    {
+      "title": "RE",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда", "Мужская одежда"],
+      "area": "re-area",
+      "mapIcon": {
+        "width": 45,
+        "url": "/images/map/re.svg"
+      },
+      "xPos": 28.4,
+      "yPos": 43.9,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "KARI",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Обувь"],
+      "area": "kari-area",
+      "mapIcon": {
+        "width": 45,
+        "url": "/images/map/kari.svg"
+      },
+      "xPos": 15,
+      "yPos": 55,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "XC",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда", "Мужская одежда", "Обувь"],
+      "area": "xc-area",
+      "mapIcon": {
+        "width": 43.45,
+        "url": "/images/map/xc.svg"
+      },
+      "xPos": 21.5,
+      "yPos": 64.5,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Cinnabon",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Кондитерские", "Кофейни", "Напитки"],
+      "area": "cinnabon-area",
+      "mapIcon": {
+        "width": 25,
+        "url": "/images/map/cinnabon.svg"
+      },
+      "xPos": 34.6,
+      "yPos": 57.1,
+      "detailsUrl": "/food.html",
+      "floor": 1
+    },
+    {
+      "title": "Zolla",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда", "Мужская одежда", "Обувь"],
+      "area": "zolla-area",
+      "mapIcon": {
+        "width": 43,
+        "url": "/images/map/zolla.svg"
+      },
+      "xPos": 42.2,
+      "yPos": 45.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Letoile",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Красота и здоровье"],
+      "area": "letoile-area",
+      "mapIcon": {
+        "width": 80,
+        "url": "/images/map/letoile.svg"
+      },
+      "xPos": 63.5,
+      "yPos": 63.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Askona",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Красота и здоровье"],
+      "area": "askona-area",
+      "mapIcon": {
+        "width": 33,
+        "url": "/images/map/askona.svg"
+      },
+      "xPos": 70.2,
+      "yPos": 62.5,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Divan Boss",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Товары для дома"],
+      "area": "divan-boss-area",
+      "mapIcon": {
+        "width": 33,
+        "url": "/images/map/divan-boss.svg"
+      },
+      "xPos": 70.2,
+      "yPos": 42.3,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Calista",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "calista-area",
+      "mapIcon": {
+        "width": 6,
+        "url": "/images/map/calista.svg"
+      },
+      "xPos": 51.5,
+      "yPos": 59.9,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "GLAM",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "glam-area",
+      "mapIcon": {
+        "width": 23,
+        "url": "/images/map/glam.svg"
+      },
+      "xPos": 49.1,
+      "yPos": 59.9,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "ELIS",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "elis-area",
+      "mapIcon": {
+        "width": 24,
+        "url": "/images/map/elis.svg"
+      },
+      "xPos": 46.9,
+      "yPos": 59.9,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "RIEKER",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Обувь"],
+      "area": "rieker-area",
+      "mapIcon": {
+        "width": 19,
+        "url": "/images/map/rieker.svg"
+      },
+      "xPos": 42.8,
+      "yPos": 57.9,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "SBALO",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда", "Мужская одежда", "Обувь"],
+      "area": "sbalo-area",
+      "mapIcon": {
+        "width": 19,
+        "url": "/images/map/sbalo.svg"
+      },
+      "xPos": 44.4,
+      "yPos": 57.9,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "INCITY",
+      "popoverIcon": "/images/map/incity-color.webp",
+      "tags": ["Женская одежда", "Аксессуары"],
+      "area": "incity-area",
+      "mapIcon": {
+        "width": 30,
+        "url": "/images/map/incity.svg"
+      },
+      "xPos": 37.7,
+      "yPos": 44.7,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "OHARA",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда", "Мужская одежда"],
+      "area": "ohara-area",
+      "mapIcon": {
+        "width": 10,
+        "url": "/images/map/ohara.svg"
+      },
+      "xPos": 35.3,
+      "yPos": 46.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "RICHEZA",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда", "Мужская одежда"],
+      "area": "richeza-area",
+      "mapIcon": {
+        "width": 14,
+        "url": "/images/map/richeza.svg"
+      },
+      "xPos": 38.4,
+      "yPos": 55,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "ANTA",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда", "Мужская одежда", "Обувь"],
+      "area": "anta-area",
+      "mapIcon": {
+        "width": 18,
+        "url": "/images/map/anta.svg"
+      },
+      "xPos": 34.9,
+      "yPos": 66,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "SHADAM",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда", "Мужская одежда"],
+      "area": "shadam-area",
+      "mapIcon": {
+        "width": 14,
+        "url": "/images/map/shadam.svg"
+      },
+      "xPos": 32.5,
+      "yPos": 66,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "MONRO",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Обувь"],
+      "area": "monro-area",
+      "mapIcon": {
+        "width": 32,
+        "url": "/images/map/monro.webp"
+      },
+      "xPos": 38.1,
+      "yPos": 66,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "FITNESS FORMULA",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Спорт и отдых"],
+      "area": "fitness-formula-area",
+      "mapIcon": {
+        "width": 19,
+        "url": "/images/map/fitness-formula.svg"
+      },
+      "xPos": 41,
+      "yPos": 54.5,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "PEPLOS",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Мужская одежда"],
+      "area": "peplos-area",
+      "mapIcon": {
+        "width": 27,
+        "url": "/images/map/peplos.svg"
+      },
+      "xPos": 51.8,
+      "yPos": 38.5,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "SUVARI",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Мужская одежда"],
+      "area": "suvari-area",
+      "mapIcon": {
+        "width": 25,
+        "url": "/images/map/suvari.svg"
+      },
+      "xPos": 47,
+      "yPos": 45.5,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "COZY HOME",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Товары для дома"],
+      "area": "cozy-home-area",
+      "mapIcon": {
+        "width": 18,
+        "url": "/images/map/cozy-home.svg"
+      },
+      "xPos": 49.1,
+      "yPos": 45.2,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "MILAVITSA",
+      "popoverIcon": "/images/map/milavitsa-color.webp",
+      "tags": ["Товары для дома"],
+      "area": "milavitsa-area",
+      "mapIcon": {
+        "width": 10,
+        "url": "/images/map/milavitsa.webp"
+      },
+      "xPos": 51,
+      "yPos": 47,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "SOKOLOV",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "sokolov-area",
+      "mapIcon": {
+        "width": 15,
+        "url": "/images/map/sokolov.svg"
+      },
+      "xPos": 52.8,
+      "yPos": 46.6,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "SUNLIGHT",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "sunlight-area",
+      "mapIcon": {
+        "width": 32,
+        "url": "/images/map/sunlight.svg"
+      },
+      "xPos": 51.8,
+      "yPos": 42.6,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "DIVISION",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Аксессуары"],
+      "area": "division-area",
+      "mapIcon": {
+        "width": 24,
+        "url": "/images/map/division.svg"
+      },
+      "xPos": 53.7,
+      "yPos": 56.3,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "POLISH",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "polish-area",
+      "mapIcon": {
+        "width": 10,
+        "url": "/images/map/polish.svg"
+      },
+      "xPos": 53.7,
+      "yPos": 60.8,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Винни-пух",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Кондитерские"],
+      "area": "vinni-area",
+      "mapIcon": {
+        "width": 10,
+        "url": "/images/map/vinni.svg"
+      },
+      "xPos": 54.6,
+      "yPos": 65.3,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Летай",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Электроника"],
+      "area": "letai-area",
+      "mapIcon": {
+        "width": 10,
+        "url": "/images/map/letai.svg"
+      },
+      "xPos": 57.96,
+      "yPos": 65,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Premium Reseller",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Электроника"],
+      "area": "premium-reseller-area",
+      "mapIcon": {
+        "width": 34,
+        "url": "/images/map/premium-reseller.svg"
+      },
+      "xPos": 58.85,
+      "yPos": 61,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "KRONOS",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "kronos-area",
+      "mapIcon": {
+        "width": 21,
+        "url": "/images/map/kronos.svg"
+      },
+      "xPos": 58.75,
+      "yPos": 57.8,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "PROFCOSMO",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Красота и здоровье"],
+      "area": "profcosmo-area",
+      "mapIcon": {
+        "width": 14,
+        "url": "/images/map/profcosmo.svg"
+      },
+      "xPos": 59.45,
+      "yPos": 55.8,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "MERGEN",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "mergen-area",
+      "mapIcon": {
+        "width": 7,
+        "url": "/images/map/mergen.svg"
+      },
+      "xPos": 63.95,
+      "yPos": 56.8,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Яхонт",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "yahont-area",
+      "mapIcon": {
+        "width": 8,
+        "url": "/images/map/yahont.webp"
+      },
+      "xPos": 65.65,
+      "yPos": 56.8,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Империя сумок",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Аксессуары"],
+      "area": "imperia-sumok-area",
+      "mapIcon": {
+        "width": 15,
+        "url": "/images/map/imperia-sumok.svg"
+      },
+      "xPos": 67.85,
+      "yPos": 57.8,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Парикмахерский магазин",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Парикмахерские"],
+      "area": "parikmaher-area",
+      "mapIcon": {
+        "width": 6,
+        "url": "/images/map/parikmaher.svg"
+      },
+      "xPos": 69.45,
+      "yPos": 56.6,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Franchesco Donni",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Обувь"],
+      "area": "franchesco-donni-area",
+      "mapIcon": {
+        "width": 30,
+        "url": "/images/map/franchesco-donni.webp"
+      },
+      "xPos": 60.75,
+      "yPos": 37.6,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Glance",
+      "popoverIcon": "/images/map/glance-color.webp",
+      "tags": ["Женская одежда"],
+      "area": "glance-area",
+      "mapIcon": {
+        "width": 17,
+        "url": "/images/map/glance.webp"
+      },
+      "xPos": 60.75,
+      "yPos": 42.4,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "МТС",
+      "popoverIcon": "/images/map/mts-color.svg",
+      "tags": ["Электроника"],
+      "area": "mts-area",
+      "mapIcon": {
+        "width": 10,
+        "url": "/images/map/mts.svg"
+      },
+      "xPos": 62.95,
+      "yPos": 45.9,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Мегафон",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Электроника"],
+      "area": "megaphone-area",
+      "mapIcon": {
+        "width": 5,
+        "url": "/images/map/megaphone.svg"
+      },
+      "xPos": 64.15,
+      "yPos": 45.9,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "SAVAGE",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "savage-area",
+      "mapIcon": {
+        "width": 5,
+        "url": "/images/map/savage.svg"
+      },
+      "xPos": 65.75,
+      "yPos": 45.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "RIGLA",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Красота и здоровье"],
+      "area": "rigla-area",
+      "mapIcon": {
+        "width": 12,
+        "url": "/images/map/rigla.svg"
+      },
+      "xPos": 70.15,
+      "yPos": 37.7,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "FISSMAN",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Товары для дома"],
+      "area": "fissman-area",
+      "mapIcon": {
+        "width": 5,
+        "url": "/images/map/fissman.svg"
+      },
+      "xPos": 69.55,
+      "yPos": 47.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "TELE2",
+      "popoverIcon": "/images/map/tele2-color.svg",
+      "tags": ["Электроника"],
+      "area": "tele2-area",
+      "mapIcon": {
+        "width": 5,
+        "url": "/images/map/tele2.svg"
+      },
+      "xPos": 70.75,
+      "yPos": 47.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Детский мир",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Товары для детей"],
+      "area": "detskiy-mir-area",
+      "mapIcon": {
+        "width": 115,
+        "url": "/images/map/detskiy-mir.svg"
+      },
+      "xPos": 66.95,
+      "yPos": 18.7,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "СИН",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "sin-area",
+      "mapIcon": {
+        "width": 86,
+        "url": "/images/map/sin.svg"
+      },
+      "xPos": 31.95,
+      "yPos": 41.7,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Familia",
+      "popoverIcon": "/images/map/familia-color.png",
+      "tags": ["Женская одежда"],
+      "area": "familia-area",
+      "mapIcon": {
+        "width": 54,
+        "url": "/images/map/familia.svg"
+      },
+      "xPos": 15.75,
+      "yPos": 58.7,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "CR",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда", "Мужская одежда"],
+      "area": "cr-area",
+      "mapIcon": {
+        "width": 64,
+        "url": "/images/map/CR.svg"
+      },
+      "xPos": 34.85,
+      "yPos": 64.3,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Эльдорадо",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Электроника"],
+      "area": "eldorado-area",
+      "mapIcon": {
+        "width": 118,
+        "url": "/images/map/eldorado.svg"
+      },
+      "xPos": 48.85,
+      "yPos": 59.3,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Kari Kids",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Товары для детей"],
+      "area": "kari-kids-area",
+      "mapIcon": {
+        "width": 60,
+        "url": "/images/map/kari-kids.svg"
+      },
+      "xPos": 21.45,
+      "yPos": 67.3,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Plove",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Рестораны"],
+      "area": "plove-area",
+      "mapIcon": {
+        "width": 46,
+        "url": "/images/map/plove.svg"
+      },
+      "xPos": 68.45,
+      "yPos": 61.6,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "ДоДо",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Фастфуд"],
+      "area": "dodo-area",
+      "mapIcon": {
+        "width": 33,
+        "url": "/images/map/dodo.svg"
+      },
+      "xPos": 64.05,
+      "yPos": 61.6,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Мехамания",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "mehamania-area",
+      "mapIcon": {
+        "width": 59,
+        "url": "/images/map/mehamania.svg"
+      },
+      "xPos": 29.15,
+      "yPos": 65.5,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Леонардо",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Хобби, подарки и книги"],
+      "area": "leonardo-area",
+      "mapIcon": {
+        "width": 79,
+        "url": "/images/map/leonardo.svg"
+      },
+      "xPos": 44.05,
+      "yPos": 43.5,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "DNS",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Электроника"],
+      "area": "dns-area",
+      "mapIcon": {
+        "width": 41,
+        "url": "/images/map/dns.svg"
+      },
+      "xPos": 50.05,
+      "yPos": 44.5,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Oldos Kids",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Товары для детей"],
+      "area": "oldos-kids-area",
+      "mapIcon": {
+        "width": 34,
+        "url": "/images/map/oldos-kids.svg"
+      },
+      "xPos": 53.55,
+      "yPos": 42.2,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Acoola",
+      "popoverIcon": "/images/map/acoola-color.png",
+      "tags": ["Товары для детей"],
+      "area": "acoola-area",
+      "mapIcon": {
+        "width": 58,
+        "url": "/images/map/acoola.svg"
+      },
+      "xPos": 58.75,
+      "yPos": 58.2,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Crockid",
+      "popoverIcon": "/images/map/crockid-color.jpg",
+      "tags": ["Товары для детей"],
+      "area": "crockid-area",
+      "mapIcon": {
+        "width": 8,
+        "url": "/images/map/crockid.svg"
+      },
+      "xPos": 55.35,
+      "yPos": 58.2,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Kniga",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Хобби, подарки и книги"],
+      "area": "kniga-area",
+      "mapIcon": {
+        "width": 45,
+        "url": "/images/map/kniga.svg"
+      },
+      "xPos": 52.65,
+      "yPos": 27.5,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Sweet cat",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Зоомагазин"],
+      "area": "sweet-cat-area",
+      "mapIcon": {
+        "width": 22,
+        "url": "/images/map/sweet-cat.svg"
+      },
+      "xPos": 52.65,
+      "yPos": 32.4,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "ЕЖ",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "hedgehog-area",
+      "mapIcon": {
+        "width": 15,
+        "url": "/images/map/hedgehog.svg"
+      },
+      "xPos": 40.05,
+      "yPos": 40.4,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Romantic",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская мода"],
+      "area": "romantic-area",
+      "mapIcon": {
+        "width": 38,
+        "url": "/images/map/romantic.svg"
+      },
+      "xPos": 36.75,
+      "yPos": 47.3,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Остров сокровищ",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Игровая зона"],
+      "area": "ostrov-area",
+      "mapIcon": {
+        "width": 59,
+        "url": "/images/map/ostrov.svg"
+      },
+      "xPos": 22.15,
+      "yPos": 41.2,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "One store",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда", "Мужская одежда"],
+      "area": "one-store-area",
+      "mapIcon": {
+        "width": 31,
+        "url": "/images/map/one-store.svg"
+      },
+      "xPos": 19.65,
+      "yPos": 48.1,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Веселая затея",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Товары для детей"],
+      "area": "zateya-area",
+      "mapIcon": {
+        "width": 15,
+        "url": "/images/map/zateya.svg"
+      },
+      "xPos": 53.55,
+      "yPos": 38,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Lilians",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "lilians-area",
+      "mapIcon": {
+        "width": 18,
+        "url": "/images/map/lilians.svg"
+      },
+      "xPos": 30.65,
+      "yPos": 58,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Vittoria",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "vittoria-area",
+      "mapIcon": {
+        "width": 3,
+        "url": "/images/map/vittoria.svg"
+      },
+      "xPos": 21.95,
+      "yPos": 48,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Atom",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Мужская одежда"],
+      "area": "atom-area",
+      "mapIcon": {
+        "width": 12,
+        "url": "/images/map/atom.svg"
+      },
+      "xPos": 41.65,
+      "yPos": 68.4,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    }
+  ],
+  "categories": [
+    {
+      "title": "Магазины",
+      "icon": "/images/map-categories/shops.svg",
+      "subcategories": [
+        {
+          "title": "Женская одежда"
+        },
+        {
+          "title": "Мужская одежда"
+        },
+        {
+          "title": "Белье и купальники"
+        },
+        {
+          "title": "Товары для детей"
+        },
+        {
+          "title": "Товары для дома"
+        },
+        {
+          "title": "Красота и здоровье"
+        },
+        {
+          "title": "Обувь"
+        },
+        {
+          "title": "Ювелирные украшения, часы"
+        },
+        {
+          "title": "Аксессуары"
+        },
+        {
+          "title": "Спорт и отдых"
+        },
+        {
+          "title": "Хобби, подарки и книги"
+        },
+        {
+          "title": "Электроника"
+        },
+        {
+          "title": "Зоомагазин"
+        },
+        {
+          "title": "Гипермаркет"
+        }
+      ]
+    },
+    {
+      "title": "Рестораны и кафе",
+      "icon": "/images/map-categories/cafe.svg",
+      "subcategories": [
+        {
+          "title": "Азиатская кухня"
+        },
+        {
+          "title": "Бизнес ланч"
+        },
+        {
+          "title": "Детское меню"
+        },
+        {
+          "title": "Европейская кухня"
+        },
+        {
+          "title": "Кондитерские"
+        },
+        {
+          "title": "Кофейни"
+        },
+        {
+          "title": "Напитки"
+        },
+        {
+          "title": "Рестораны"
+        },
+        {
+          "title": "Фастфуд"
+        }
+      ]
+    },
+    {
+      "title": "Развлечения",
+      "icon": "/images/map-categories/tickets.svg",
+      "subcategories": [
+        {
+          "title": "Аттракционы-качалки"
+        },
+        {
+          "title": "Аквариум"
+        },
+        {
+          "title": "Виртуальная реальность"
+        },
+        {
+          "title": "Игровой терминал"
+        },
+        {
+          "title": "Игровая зона"
+        },
+        {
+          "title": "Игропарк"
+        },
+        {
+          "title": "Прокат детских машинок"
+        },
+        {
+          "title": "ТИР"
+        }
+      ]
+    },
+    {
+      "title": "Услуги",
+      "icon": "/images/map-categories/scissors.svg",
+      "subcategories": [
+        {
+          "title": "Ремонт"
+        },
+        {
+          "title": "Копи-центр “Южная точка”"
+        },
+        {
+          "title": "Химчистки"
+        },
+        {
+          "title": "Парикмахерские"
+        },
+        {
+          "title": "Салоны маникюра "
+        }
+      ]
+    }
+  ]
+}

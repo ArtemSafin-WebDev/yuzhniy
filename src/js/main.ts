@@ -21,6 +21,8 @@ import nowOnScreenSlider from "./nowOnScreenSlider";
 import cinemaAbout from "./cinemaAbout";
 import cinemaIntroSlider from "./cinemaIntroSlider";
 import modalCalendar from "./modalCalendar";
+import showMap from "./shopMap";
+import mapDetail from "./mapDetail";
 
 document.addEventListener("DOMContentLoaded", () => {
   benefitsSlider();
@@ -44,6 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
   cinemaAbout();
   cinemaIntroSlider();
   modalCalendar();
+  showMap();
+  mapDetail();
 });
 
 window.addEventListener("load", () => {
