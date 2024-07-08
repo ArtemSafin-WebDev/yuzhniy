@@ -553,11 +553,16 @@ export default class ShopMap {
     popover?.classList.add("active");
     mobilePopover?.classList.add("active");
 
+    // this.points.forEach((point) => point.classList.remove("active"));
+    // const point = this.points.find(
+    //   (point) => point.getAttribute("data-name") === name.trim().toLowerCase()
+    // );
     this.points.forEach((point) => point.classList.remove("active"));
-    const point = this.points.find(
-      (point) => point.getAttribute("data-name") === name.trim().toLowerCase()
+    const points = this.points.filter(
+      (point) => point.getAttribute("data-area") === id
     );
-    point?.classList.add("active");
+    points.forEach((point) => point.classList.add("active"));
+    // point?.classList.add("active");
     this.areas.forEach((area) => area.classList.remove("active"));
     const area = this.areas.find((area) => area.id === id);
 
@@ -683,8 +688,49 @@ export default class ShopMap {
         event.preventDefault();
         if (this.moving) return;
         const id = area.id;
-        console.log("id", id);
-        this.openPopover(id);
+        const points = Array.from(
+          document.querySelectorAll(`.map__point[data-area="${id}"]`)
+        );
+
+        const mouseX = event.clientX;
+        const mouseY = event.clientY;
+
+        const pointsWithDistances = points.map((point) => {
+          const rect = point.getBoundingClientRect();
+          const pointX = rect.left + rect.width / 2;
+          const pointY = rect.top + rect.height / 2;
+
+          const x = mouseX - pointX;
+          const y = mouseY - pointY;
+
+          const distance = Math.sqrt(x * x + y * y);
+
+          return {
+            point,
+            distance,
+          };
+        });
+        const pointsSortedByDistance = pointsWithDistances.sort((a, b) => {
+          if (a.distance < b.distance) {
+            return -1;
+          } else if (a.distance > b.distance) {
+            return 1;
+          }
+          return 0;
+        });
+
+        const closestPoint = pointsSortedByDistance[0];
+
+        if (closestPoint) {
+          const name = closestPoint?.point?.getAttribute("data-name");
+          if (!name) return;
+          this.openPopoverByName(name);
+        }
+
+        // console.log("Matching points", points);
+
+        // console.log("id", id);
+        // this.openPopover(id);
       });
     });
 
@@ -703,18 +749,19 @@ export default class ShopMap {
 
         const id = area.id;
 
-        const point = document.querySelector(`[data-area="${id}"]`);
-        point?.classList.add("hovered");
-
-        console.log("Point hovered", point);
+        const points = Array.from(
+          document.querySelectorAll(`[data-area="${id}"]`)
+        );
+        points.forEach((point) => point.classList.add("hovered"));
       });
       area.addEventListener("mouseleave", () => {
         area.classList.remove("hovered");
         const id = area.id;
 
-        const point = document.querySelector(`[data-area="${id}"]`);
-
-        point?.classList.remove("hovered");
+        const points = Array.from(
+          document.querySelectorAll(`[data-area="${id}"]`)
+        );
+        points.forEach((point) => point.classList.remove("hovered"));
       });
     });
 
