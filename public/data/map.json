@@ -71,6 +71,76 @@
       "floor": 1
     },
     {
+      "title": "Четыре лапы",
+      "popoverIcon": "/images/map/four-legs-color.jpg",
+      "tags": ["Зоомагазин"],
+      "area": "four-legs-area",
+      "mapIcon": {
+        "width": 30,
+        "url": "/images/map/four-legs.svg"
+      },
+      "xPos": 70.3,
+      "yPos": 19,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Сбермаркет Ашан",
+      "popoverIcon": "/images/map/auchan-color.svg",
+      "tags": ["Гипермаркет"],
+      "area": "sbermarket-area",
+      "mapIcon": {
+        "width": 30,
+        "url": "/images/map/sbermarket.svg"
+      },
+      "xPos": 70.3,
+      "yPos": 14.4,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Сбермаркет Ашан",
+      "popoverIcon": "/images/map/auchan-color.svg",
+      "tags": [],
+      "area": "beer-store-area",
+      "mapIcon": {
+        "width": 15,
+        "url": "/images/map/beer-store.svg"
+      },
+      "xPos": 70.3,
+      "yPos": 10.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Intimissimi",
+      "popoverIcon": "/images/map/intimissimi.svg",
+      "tags": ["Женская одежда"],
+      "area": "intimissimi-area",
+      "mapIcon": {
+        "width": 29,
+        "url": "/images/map/intimissimi.svg"
+      },
+      "xPos": 60.3,
+      "yPos": 46.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "CALZEDONIA",
+      "popoverIcon": "/images/map/calzedonia.webp",
+      "tags": ["Женская одежда"],
+      "area": "intimissimi-area",
+      "mapIcon": {
+        "width": 35,
+        "url": "/images/map/calzedonia.webp"
+      },
+      "xPos": 60.9,
+      "yPos": 48.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
       "title": "Твое",
       "popoverIcon": "/images/map/tvoe-color.svg",
       "tags": ["Женская одежда", "Мужская одежда"],
@@ -95,6 +165,62 @@
       },
       "xPos": 66,
       "yPos": 35.5,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Glenfield",
+      "popoverIcon": "/images/map/glenfield-color.svg",
+      "tags": ["Обувь"],
+      "area": "glenfield-area",
+      "mapIcon": {
+        "width": 20,
+        "url": "/images/map/glenfield.svg"
+      },
+      "xPos": 70.2,
+      "yPos": 33,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Банк Авангард",
+      "popoverIcon": "/images/map/avangard.svg",
+      "tags": ["Банкомат", "Банк"],
+      "area": "avangard-area",
+      "mapIcon": {
+        "width": 3,
+        "url": "/images/map/avangard.svg"
+      },
+      "xPos": 71.5,
+      "yPos": 45.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Pro Vostok",
+      "popoverIcon": "/images/map/vostok.svg",
+      "tags": [],
+      "area": "vostok-area",
+      "mapIcon": {
+        "width": 2.5,
+        "url": "/images/map/vostok.svg"
+      },
+      "xPos": 71.5,
+      "yPos": 48.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Мастер минутка",
+      "popoverIcon": "/images/map/minutka.svg",
+      "tags": [],
+      "area": "minutka-area",
+      "mapIcon": {
+        "width": 3,
+        "url": "/images/map/minutka.svg"
+      },
+      "xPos": 71.45,
+      "yPos": 32.8,
       "detailsUrl": "/shop.html",
       "floor": 1
     },

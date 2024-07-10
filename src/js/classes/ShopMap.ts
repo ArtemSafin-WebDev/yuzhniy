@@ -73,6 +73,10 @@ export default class ShopMap {
   private pointsFilteredByCategory: Point[] = [];
   private mobilePopoversWrapper: HTMLElement | null = null;
   private mobilePopovers: HTMLElement[] = [];
+  private catalogSearchInput: HTMLInputElement | null = null;
+
+  private catalogCategories: HTMLLinkElement[] = [];
+  private catalogMobileCategories: HTMLLinkElement[] = [];
 
   constructor(element: HTMLElement) {
     this.rootElement = element;
@@ -111,12 +115,22 @@ export default class ShopMap {
       ".map__selector-results-inner"
     );
 
+    this.catalogCategories = Array.from(
+      document.querySelectorAll(".catalog__categories-accordion-link")
+    );
+
+    this.catalogMobileCategories = Array.from(
+      document.querySelectorAll(".catalog__block-subcategories-link")
+    );
+
     this.categoryTitleTextElement = this.rootElement.querySelector<HTMLElement>(
       ".map__selector-selected-category-text-inner span"
     );
     this.backBtn = this.rootElement.querySelector<HTMLElement>(
       ".map__selector-selected-category-back"
     );
+
+    this.catalogSearchInput = document.querySelector(".catalog__search-input");
 
     this.subcategoriesInner = this.rootElement.querySelector<HTMLElement>(
       ".map__selector-subcategories-inner"
@@ -431,11 +445,18 @@ export default class ShopMap {
       { Pins }
     );
 
+    if (
+      window.matchMedia("(max-width: 640px)").matches &&
+      this.rootElement.closest(".catalog")
+    ) {
+      this.panZoomInstance.zoomTo(6);
+    }
+
     this.openPopoverByURL();
   };
 
-  setFloor = (index: number) => {
-    this.closePopover();
+  setFloor = (index: number, close?: boolean) => {
+    if (close) this.closePopover();
     this.floorIndex = index;
     this.floorsBtns.forEach((btn) => btn.classList.remove("active"));
     this.floorsBtns[index]?.classList.add("active");
@@ -454,6 +475,30 @@ export default class ShopMap {
     } else {
       this.exitSearch();
     }
+  };
+
+  handleCatalogSearch = () => {
+    this.resetFilterCatalog();
+    if (!this.catalogSearchInput) return;
+    const value = this.catalogSearchInput.value.trim().toLowerCase();
+    if (!value) {
+      this.closePopover();
+      return;
+    }
+
+    let searchResults = this.pointsData.filter((item) => {
+      return item.title.trim().toLowerCase().startsWith(value);
+    });
+
+    if (!searchResults.length) {
+      this.closePopover();
+      return;
+    }
+
+    const firstResult = searchResults[0];
+    const name = firstResult.title;
+
+    this.openPopoverByName(name);
   };
 
   openPopover = (id: string) => {
@@ -477,6 +522,80 @@ export default class ShopMap {
     this.areas.forEach((area) => area.classList.remove("active"));
     const area = this.areas.find((area) => area.id === id);
     area?.classList.add("active");
+  };
+
+  filterCatalog = (category: string) => {
+    const matchingItems = this.pointsData.filter((item) =>
+      item.tags.includes(category)
+    );
+    const matchingPoints = this.points.filter((point) => {
+      const pointName = point.getAttribute("data-name");
+      if (!pointName) return false;
+      const correspondingPoint = matchingItems.find(
+        (item) =>
+          item.title.toLowerCase().trim() === pointName.toLowerCase().trim()
+      );
+      if (correspondingPoint) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+
+    const matchingAreas = this.areas.filter((area) => {
+      const areaId = area.id;
+      const correspondingPoints = matchingPoints.filter((point) => {
+        const pointAreaId = point.getAttribute("data-area");
+        if (pointAreaId === areaId) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+      if (correspondingPoints.length > 0) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+
+    this.points.forEach((point) => point.classList.add("dimmed"));
+    this.areas.forEach((area) => area.classList.add("dimmed"));
+    matchingPoints.forEach((point) => point.classList.remove("dimmed"));
+    matchingAreas.forEach((area) => area.classList.remove("dimmed"));
+  };
+
+  setQueryString = (value: string) => {
+    const baseUrl = [
+      window.location.protocol,
+      "//",
+      window.location.host,
+      window.location.pathname,
+    ].join("");
+    let params = new URLSearchParams(window.location.search);
+    params.set("map_title", value);
+    window.history.replaceState({}, "Title", `${baseUrl}?${params.toString()}`);
+  };
+
+  clearQueryString() {
+    const baseUrl = [
+      window.location.protocol,
+      "//",
+      window.location.host,
+      window.location.pathname,
+    ].join("");
+    window.history.replaceState({}, "Title", `${baseUrl}`);
+  }
+
+  resetFilterCatalog = () => {
+    this.catalogCategories.forEach((category) =>
+      category.classList.remove("active")
+    );
+    this.catalogMobileCategories.forEach((category) =>
+      category.classList.remove("active")
+    );
+    this.points.forEach((point) => point.classList.remove("dimmed"));
+    this.areas.forEach((area) => area.classList.remove("dimmed"));
   };
 
   selectMainCategory = (category: string) => {
@@ -548,7 +667,7 @@ export default class ShopMap {
     );
 
     const floor = Number(popover?.getAttribute("data-floor"));
-    this.setFloor(floor);
+    this.setFloor(floor, true);
     const id = popover?.getAttribute("data-area");
     popover?.classList.add("active");
     mobilePopover?.classList.add("active");
@@ -568,6 +687,10 @@ export default class ShopMap {
 
     console.log("Area", area, id);
     area?.classList.add("active");
+
+    if (this.rootElement.closest(".catalog")) {
+      this.setQueryString(name);
+    }
 
     // const objectToZoomIn = point;
     // const rect = objectToZoomIn?.getBoundingClientRect()!;
@@ -604,6 +727,7 @@ export default class ShopMap {
     );
     this.points.forEach((point) => point.classList.remove("active"));
     this.areas.forEach((area) => area.classList.remove("active"));
+    this.clearQueryString();
   };
 
   enterSearch = (text: string) => {
@@ -673,7 +797,7 @@ export default class ShopMap {
     this.floorsBtns.forEach((btn, btnIndex) => {
       btn.addEventListener("click", (event) => {
         event.preventDefault();
-        this.setFloor(btnIndex);
+        this.setFloor(btnIndex, true);
       });
     });
 
@@ -932,6 +1056,56 @@ export default class ShopMap {
         this.rootElement.classList.remove("categories-shown");
         this.openPopoverByName(title);
       }
+    });
+
+    this.catalogSearchInput?.addEventListener(
+      "input",
+      this.handleCatalogSearch
+    );
+
+    this.catalogCategories.forEach((category) => {
+      category.addEventListener("click", (event) => {
+        event.preventDefault();
+        this.closePopover();
+
+        if (!category.classList.contains("active")) {
+          this.catalogCategories.forEach((category) =>
+            category.classList.remove("active")
+          );
+          category.classList.add("active");
+          const title = category.querySelector(
+            ".catalog__categories-accordion-link-text-inner"
+          );
+          const titleText = title?.textContent?.trim();
+          console.log("Title text", titleText);
+          if (!titleText) return;
+          this.filterCatalog(titleText);
+        } else {
+          this.resetFilterCatalog();
+        }
+      });
+    });
+    this.catalogMobileCategories.forEach((category) => {
+      category.addEventListener("click", (event) => {
+        event.preventDefault();
+        this.closePopover();
+
+        if (!category.classList.contains("active")) {
+          this.catalogMobileCategories.forEach((category) =>
+            category.classList.remove("active")
+          );
+          category.classList.add("active");
+          const title = category.querySelector(
+            ".catalog__block-subcategories-link-text"
+          );
+          const titleText = title?.textContent?.trim();
+          console.log("Title text", titleText);
+          if (!titleText) return;
+          this.filterCatalog(titleText);
+        } else {
+          this.resetFilterCatalog();
+        }
+      });
     });
   };
 }

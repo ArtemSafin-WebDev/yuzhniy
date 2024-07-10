@@ -4,6 +4,15 @@
 
   @include blockWrapper;
 
+  &--map {
+    overflow: hidden;
+    overflow: clip;
+
+    @include breakpoint(mobile) {
+      overflow: visible;
+    }
+  }
+
   @include breakpoint(mobile) {
     padding-top: 1rem;
     padding-bottom: 8rem;
@@ -32,12 +41,21 @@
   @include breakpointMF(small-tablet) {
     padding-right: 2rem;
     grid-column: 1 / 4;
+
+    .catalog--map & {
+      grid-row: 1 / 2;
+      z-index: 100;
+    }
   }
 }
 
 .catalog__right-col {
   @include breakpointMF(small-tablet) {
     grid-column: 4 / -1;
+    .catalog--map & {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+    }
   }
 }
 
@@ -67,6 +85,7 @@
   font-weight: 400;
   font-size: 2rem;
   line-height: 120%;
+  background-color: #fff;
   &:link,
   &:visited {
     color: black;
@@ -78,6 +97,14 @@
     height: 3.2rem;
     fill: black;
     transition: fill 0.2s;
+  }
+
+  &:not(.active) {
+    @media (hover: hover) {
+      &:hover {
+        border-color: black;
+      }
+    }
   }
 
   &.active {
@@ -96,6 +123,8 @@
 
   @include breakpoint(mobile) {
     margin-bottom: 1rem;
+    position: relative;
+    z-index: 50;
   }
 }
 
@@ -155,7 +184,7 @@
 .catalog__categories {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 1rem;
-
+  background-color: #fff;
   @include breakpoint(mobile) {
     display: none;
   }
@@ -577,6 +606,9 @@
   @include breakpoint(mobile) {
     position: relative;
     display: block;
+
+    position: relative;
+    z-index: 50;
   }
 }
 
@@ -590,7 +622,7 @@
   border: 1px solid rgba(black, 0.15);
   width: 100%;
   transition: border-radius 0.2s;
-
+  background-color: #fff;
   svg {
     flex-shrink: 0;
     width: 1.5rem;
@@ -919,6 +951,7 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 130%;
+  background-color: #fff;
 
   &.active {
     background-color: black;
@@ -940,5 +973,36 @@
 
   .catalog__block-subcategories-link.active & {
     color: rgba(white, 0.5);
+  }
+}
+
+.catalog__mobile-categories-tabs {
+  display: none;
+
+  @include breakpoint(mobile) {
+    display: block;
+    position: relative;
+    margin-top: 4rem;
+  }
+}
+
+.catalog__mobile-categories-tabs-item {
+  @include breakpoint(mobile) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0s linear 0.4s;
+    z-index: 5;
+
+    &.active {
+      opacity: 1;
+      visibility: inherit;
+      transition: opacity 0.4s, visibility 0.4s;
+      z-index: 20;
+    }
   }
 }
