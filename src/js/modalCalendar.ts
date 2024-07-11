@@ -77,7 +77,7 @@ export default function modalCalendar() {
     );
 
     dates?.addEventListener("click", () => {
-      element.classList.add("active");
+      element.classList.toggle("active");
     });
 
     closeBtns.forEach((btn) =>

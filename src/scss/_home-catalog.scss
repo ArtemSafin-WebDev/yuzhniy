@@ -294,6 +294,7 @@ a.home-catalog__card-tag {
   font-weight: 400;
   line-height: 120%;
   color: rgba(0, 0, 0, 0.5);
+  margin-left: auto;
 
   @include breakpoint(mobile) {
     font-style: normal;
@@ -301,6 +302,7 @@ a.home-catalog__card-tag {
     font-size: 1.2rem;
     line-height: 125%;
     gap: 0.4rem;
+    margin: 0;
   }
 
   svg {

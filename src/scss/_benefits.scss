@@ -102,11 +102,12 @@
   height: 7rem;
   border-radius: 1rem;
   border: 1px solid white;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, opacity 0.2s;
 
   &.swiper-button-disabled {
-    cursor: pointer;
+    cursor: default;
     user-select: none;
+    opacity: 0.5;
   }
 
   @media (hover: hover) {
@@ -227,6 +228,11 @@
   color: white;
   flex-grow: 1;
 
+  &:link,
+  &:visited {
+    color: white;
+  }
+
   @include breakpointMF(small-tablet) {
     backdrop-filter: blur(10px);
   }
@@ -237,6 +243,10 @@
     background: #f2f2f2;
     color: black;
     gap: 2rem;
+    &:link,
+    &:visited {
+      color: black;
+    }
   }
 }
 

@@ -38,6 +38,22 @@ export default function header() {
         }
       });
     }
+
+    document.addEventListener("click", (event) => {
+      const target = event.target as HTMLElement;
+      if (
+        target.matches(".page-header__search") ||
+        target.closest(".page-header__search")
+      )
+        return;
+      search.classList.remove("open");
+      if (inputWrapper) {
+        gsap.to(inputWrapper, {
+          width: 0,
+          duration: 0.5,
+        });
+      }
+    });
   });
 
   const menuOpen = header.querySelector<HTMLButtonElement>(
