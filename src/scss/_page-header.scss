@@ -345,6 +345,10 @@
   }
 }
 
+.page-header__info-item--phone {
+  white-space: nowrap;
+}
+
 .page-header__info-item-text {
   @include breakpointMF(small-tablet) {
     text-decoration: none;

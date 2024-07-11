@@ -1,5 +1,11 @@
 import Swiper from "swiper";
-import { Pagination, Navigation, Controller, EffectFade } from "swiper/modules";
+import {
+  Pagination,
+  Navigation,
+  Controller,
+  EffectFade,
+  Autoplay,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -90,7 +96,11 @@ export default function benefitsSlider() {
             slidesPerView: 1,
             spaceBetween: 20,
             speed: 600,
-            modules: [Controller],
+            modules: [Controller, Autoplay],
+            autoplay: {
+              disableOnInteraction: true,
+              delay: 5000,
+            },
           });
         }
 

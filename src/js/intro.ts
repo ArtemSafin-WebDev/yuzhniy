@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import { Pagination, Navigation, EffectFade } from "swiper/modules";
+import { Pagination, Navigation, EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -16,10 +16,14 @@ export default function intro() {
     if (!container) return;
     new Swiper(container, {
       slidesPerView: 1,
-      modules: [Navigation, EffectFade, Pagination],
+      modules: [Navigation, EffectFade, Pagination, Autoplay],
       speed: 1000,
       effect: "fade",
       longSwipesRatio: 0.2,
+      autoplay: {
+        disableOnInteraction: true,
+        delay: 5000,
+      },
       fadeEffect: {
         crossFade: true,
       },
