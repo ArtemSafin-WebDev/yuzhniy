@@ -94,6 +94,77 @@ export default function loader() {
           "<"
         );
       }
+
+      if (window.matchMedia("(max-width: 640px)").matches) return;
+
+      const catalogLeftCol =
+        document.querySelector<HTMLElement>(".catalog__left-col");
+
+      if (catalogLeftCol) {
+        tl.from(
+          catalogLeftCol,
+          {
+            autoAlpha: 0,
+            duration: 0.8,
+          },
+          "<+=0.2"
+        );
+      }
+
+      const catalogBlocks = Array.from(
+        document.querySelectorAll<HTMLElement>(".catalog__block")
+      );
+
+      catalogBlocks.forEach((block, blockIndex) => {
+        const catalogBlockHeading = block.querySelector<HTMLElement>(
+          ".catalog__block-heading"
+        );
+        const catalogListItems = Array.from(
+          block.querySelectorAll(".catalog__block-list-item")
+        );
+
+        const extraListItems = Array.from(
+          block.querySelectorAll<HTMLElement>(".catalog__extra-list-item")
+        );
+
+        if (catalogBlockHeading) {
+          tl.from(
+            catalogBlockHeading,
+            {
+              autoAlpha: 0,
+              duration: 0.6,
+            },
+            "<+=0.2"
+          );
+        }
+
+        if (catalogListItems.length) {
+          tl.from(
+            catalogListItems,
+            {
+              autoAlpha: 0,
+              duration: 0.6,
+              stagger: 0.1,
+              ease: "power2.out",
+              y: 40,
+            },
+            "<"
+          );
+        }
+        if (extraListItems.length) {
+          tl.from(
+            extraListItems,
+            {
+              autoAlpha: 0,
+              duration: 0.6,
+              stagger: 0.1,
+              ease: "power2.out",
+              y: 40,
+            },
+            "<"
+          );
+        }
+      });
     }, 300);
   });
 }
