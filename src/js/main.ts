@@ -23,6 +23,7 @@ import cinemaIntroSlider from "./cinemaIntroSlider";
 import modalCalendar from "./modalCalendar";
 import showMap from "./shopMap";
 import mapDetail from "./mapDetail";
+import homeCatalogAnimation from "./homeCatalogAnimation";
 
 document.addEventListener("DOMContentLoaded", () => {
   benefitsSlider();
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   modalCalendar();
   showMap();
   mapDetail();
+  homeCatalogAnimation();
 });
 
 window.addEventListener("load", () => {
