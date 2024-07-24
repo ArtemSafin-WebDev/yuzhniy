@@ -115,7 +115,7 @@ export default function loader() {
         document.querySelectorAll<HTMLElement>(".catalog__block")
       );
 
-      catalogBlocks.forEach((block, blockIndex) => {
+      catalogBlocks.forEach((block) => {
         const catalogBlockHeading = block.querySelector<HTMLElement>(
           ".catalog__block-heading"
         );
