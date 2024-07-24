@@ -987,3 +987,28 @@
     }
   }
 }
+
+.page-header__nav-list-item--more {
+  @include breakpoint(mobile) {
+    display: contents;
+    .page-header__nav-link {
+      display: none;
+    }
+
+    .page-header__nav-submenu,
+    .page-header__nav-submenu-inner,
+    .page-header__nav-submenu-list {
+      display: contents;
+    }
+
+    .page-header__nav-submenu-link {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 120%;
+      img {
+        display: none;
+      }
+    }
+  }
+}
