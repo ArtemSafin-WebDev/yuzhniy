@@ -445,7 +445,7 @@
   display: block;
   width: 100%;
   height: auto;
-
+  backface-visibility: hidden;
   position: relative;
   display: none;
   &.active {
@@ -458,12 +458,14 @@
     height: auto;
     fill: none;
     a {
-      path {
-        transition: all 0.2s;
+      path,
+      rect {
+        transition: fill 0.2s, stroke 0.2s;
       }
       &.hovered,
       &.active {
-        path {
+        path,
+        rect {
           fill: black;
           stroke: black;
         }
@@ -479,7 +481,7 @@
   left: var(--x-pos, 0);
   top: var(--y-pos, 0);
   pointer-events: none;
-
+  filter: invert(0%);
   &.dimmed {
     opacity: 0.2;
     pointer-events: none;
@@ -504,6 +506,14 @@ svg a.dimmed {
   .map__point.hovered & {
     filter: invert(100%) contrast(300%);
   }
+}
+
+.map__point-icon-placeholder {
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .map__popover {

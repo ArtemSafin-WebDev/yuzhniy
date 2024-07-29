@@ -7,7 +7,7 @@
       "area": "auchan-area",
       "mapIcon": {
         "width": 114,
-        "url": "/images/map/auchan.svg"
+        "url": "/images/map/auchan.webp"
       },
       "xPos": 86,
       "yPos": 40,
@@ -273,7 +273,7 @@
       "area": "re-area",
       "mapIcon": {
         "width": 45,
-        "url": "/images/map/re.svg"
+        "url": "/images/map/re.webp"
       },
       "xPos": 28.4,
       "yPos": 43.9,
@@ -630,6 +630,167 @@
       "detailsUrl": "/shop.html",
       "floor": 1
     },
+    {
+      "title": "Some shop 1",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-1-area",
+      "xPos": 54.52,
+      "yPos": 45.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 2",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-2-area",
+      "xPos": 54.52,
+      "yPos": 47.74,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 3",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-3-area",
+      "xPos": 58.12,
+      "yPos": 45.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 4",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-4-area",
+      "xPos": 58.12,
+      "yPos": 47.74,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 5",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-5-area",
+      "xPos": 52.52,
+      "yPos": 52,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 6",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-6-area",
+      "xPos": 51.25,
+      "yPos": 52,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 7",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-7-area",
+      "xPos": 47.85,
+      "yPos": 52,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 8",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-8-area",
+      "xPos": 46.85,
+      "yPos": 52,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 9",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-9-area",
+      "xPos": 44.67,
+      "yPos": 52,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 10",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-10-area",
+      "xPos": 42.2,
+      "yPos": 52,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 11",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-11-area",
+      "xPos": 61,
+      "yPos": 51.7,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 12",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-12-area",
+      "xPos": 62.3,
+      "yPos": 51.7,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 13",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-13-area",
+      "xPos": 63.6,
+      "yPos": 51.7,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 14",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-14-area",
+      "xPos": 64.9,
+      "yPos": 51.7,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 15",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-15-area",
+      "xPos": 68.2,
+      "yPos": 51.7,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 16",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-16-area",
+      "xPos": 69.5,
+      "yPos": 51.7,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+
     {
       "title": "DIVISION",
       "popoverIcon": "/images/map/gloria-color.svg",

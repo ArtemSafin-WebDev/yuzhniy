@@ -9,7 +9,7 @@ type Point = {
   popoverIcon: string;
   tags: string[];
   area: string;
-  mapIcon: {
+  mapIcon?: {
     width: number;
     url: string;
   };
@@ -185,13 +185,22 @@ export default class ShopMap {
     div.setAttribute("data-area", point.area);
     div.setAttribute("data-name", point.title.trim().toLowerCase());
     div.setAttribute("data-floor", point.floor.toString());
-    div.style.setProperty("--icon-width", point.mapIcon.width.toString());
+
+    if (point.mapIcon?.width)
+      div.style.setProperty("--icon-width", point.mapIcon.width.toString());
     div.style.setProperty("--x-pos", point.xPos.toString() + "%");
     div.style.setProperty("--y-pos", point.yPos.toString() + "%");
-    const icon = new Image();
-    icon.classList.add("map__point-icon");
-    icon.src = point.mapIcon.url;
-    div.append(icon);
+    if (point.mapIcon?.url) {
+      const icon = new Image();
+      icon.classList.add("map__point-icon");
+      icon.src = point.mapIcon.url;
+      div.append(icon);
+    } else {
+      const placeholder = document.createElement("div");
+      placeholder.classList.add("map__point-icon-placeholder");
+      div.append(placeholder);
+    }
+
     return div;
   };
 
