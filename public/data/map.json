@@ -741,6 +741,126 @@
       "floor": 1
     },
     {
+      "title": "Some shop 17",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-17-area",
+      "xPos": 61,
+      "yPos": 28.3,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 18",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-18-area",
+      "xPos": 63.9,
+      "yPos": 28.3,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 19",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-19-area",
+      "xPos": 65.25,
+      "yPos": 28.3,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 20",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-20-area",
+      "xPos": 67.45,
+      "yPos": 28.3,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 21",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-21-area",
+      "xPos": 55.2,
+      "yPos": 35.8,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 22",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-22-area",
+      "xPos": 57.25,
+      "yPos": 35.8,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 23",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-23-area",
+      "xPos": 31.2,
+      "yPos": 55.2,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 24",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-24-area",
+      "xPos": 32.5,
+      "yPos": 55.2,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 25",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-25-area",
+      "xPos": 32.5,
+      "yPos": 59.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 26",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-26-area",
+      "xPos": 31.2,
+      "yPos": 59.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 27",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-27-area",
+      "xPos": 29.8,
+      "yPos": 67.1,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
+      "title": "Some shop 28",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Ювелирные украшения, часы"],
+      "area": "shop-28-area",
+      "xPos": 29.8,
+      "yPos": 64.5,
+      "detailsUrl": "/shop.html",
+      "floor": 1
+    },
+    {
       "title": "Some shop 12",
       "popoverIcon": "/images/map/gloria-color.svg",
       "tags": ["Ювелирные украшения, часы"],
@@ -1586,6 +1706,106 @@
       },
       "xPos": 21.95,
       "yPos": 48,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Shop 29",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "shop-29-area",
+      "xPos": 21.85,
+      "yPos": 53.7,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Shop 30",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "shop-30-area",
+      "xPos": 21.85,
+      "yPos": 56.8,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Shop 31",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "shop-31-area",
+      "xPos": 25.2,
+      "yPos": 56.8,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Shop 32",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "shop-32-area",
+      "xPos": 28.2,
+      "yPos": 55.3,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Shop 33",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "shop-33-area",
+      "xPos": 30.4,
+      "yPos": 53.7,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Shop 34",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "shop-34-area",
+      "xPos": 33.6,
+      "yPos": 53.7,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Shop 35",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "shop-35-area",
+      "xPos": 36.2,
+      "yPos": 53.7,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Shop 36",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "shop-36-area",
+      "xPos": 39.8,
+      "yPos": 50.3,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Shop 37",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "shop-37-area",
+      "xPos": 40.3,
+      "yPos": 56,
+      "detailsUrl": "/shop.html",
+      "floor": 2
+    },
+    {
+      "title": "Shop 38",
+      "popoverIcon": "/images/map/gloria-color.svg",
+      "tags": ["Женская одежда"],
+      "area": "shop-38-area",
+      "xPos": 42.8,
+      "yPos": 54.3,
       "detailsUrl": "/shop.html",
       "floor": 2
     },
